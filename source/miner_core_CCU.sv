@@ -1,23 +1,23 @@
 //Michael Loh
 //Bitcoin Miner Project
-//Core Control Unit
+//Miner Core Control Unit
 
-module CCU
+module miner_core_CCU
 (
   input wire clk,
   input wire n_rst,
   input wire hash_enable,
   input wire rollover_flag,
-  output wire select,
-  output wire enable_timer,
-  output wire rollover_val,
-  output wire msa_en,
-  output wire comp_en,
-  output wire msa2_en,
-  output wire comp2_en,
-  output wire add_en,
-  output wire add2_en,
-  output wire finished
+  output reg select,
+  output reg enable_timer,
+  output reg [6:0]rollover_val,
+  output reg msa_en,
+  output reg comp_en,
+  output reg msa2_en,
+  output reg comp2_en,
+  output reg add_en,
+  output reg add2_en,
+  output reg finished
 );
 
 typedef enum bit [3:0] {IDLE, MSA1, COMP1, ADDH1, MSA2, COMP2, ADDH2, MSA3, COMP3, ADDH3, FINISHED} stateType;

@@ -17,37 +17,39 @@ module tb_miner_core_CCU();
 	initial
 	begin
 	   tb_test_num = 0;
-	   tb_nrst = 1'b1;				// Initialize to be inactive
+	   n_rst = 1'b1;				// Initialize to be inactive
 	   //Power-on Reset of the DUT
 	   #(0.1);
-	   tb_nrst	= 1'b0; 	// Need to actually toggle this in order for it to actually run dependent always blocks
+	   n_rst	= 1'b0; 	// Need to actually toggle this in order for it to actually run dependent always blocks
 	   #(CLK_PERIOD * 2.25);	// Release the reset away from a clock edge
-	   tb_nrst	= 1'b1; 	// Deactivate the chip reset
+	   n_rst	= 1'b1; 	// Deactivate the chip reset
 	   #(CLK_PERIOD);
 	   //Wait for another period
 	   #(CLK_PERIOD); 
-     @(negedge tb_clk);
+     @(negedge clk);
      tb_test_num = tb_test_num + 1'b1;
 	   hash_enable = 0;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   hash_enable = 1;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   rollover_flag = 0;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   rollover_flag = 1;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   rollover_flag = 0;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk):
+	   @(negedge clk);
 	   rollover_flag = 1;
 	   #(CLK_PERIOD);//DURING ADDING STAGE
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   rollover_flag = 0;
 	   #(CLK_PERIOD);
-	   @(negedge tb_clk);
+	   @(negedge clk);
 	   rollover_flag = 1;
+  end
+endmodule
