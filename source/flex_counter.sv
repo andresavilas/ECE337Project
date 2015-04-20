@@ -21,25 +21,35 @@ module flex_counter
   reg [NUM_CNT_BITS - 1:0] nxt_data;
   reg nxt_flag;
   always_ff @ (posedge clk,negedge n_rst) begin
-    if(1'b0 == n_rst) begin
+    if(n_rst == 1'b0) 
+    begin
       count_out <= 0;
       rollover_flag <= 1'b0;
-    end else begin
+    end 
+    else begin
       count_out <= nxt_data;
       rollover_flag <= nxt_flag; 
     end
   end
   always_comb begin
     nxt_data = count_out;
-    if(clear == 1'b1) begin
+    if(clear == 1'b1) 
+    begin
       nxt_data = 0;
-    end else if(count_enable == 1'b1 && count_out == rollover_val) begin
+    end 
+    else if(count_enable == 1'b1 && count_out == rollover_val) 
+    begin
       nxt_data = 1;   
-    end else if(count_enable == 1'b1) begin
+    end 
+    else if(count_enable == 1'b1) 
+    begin
       nxt_data = count_out + 1;
     end   
   end
   always_comb begin
-    nxt_flag = (nxt_data == rollover_val) ? 1'b1 : 1'b0;
+    if((nxt_data == rollover_val) && (count_enable == 1'b1))
+      nxt_flag = 1'b1;
+    else
+      nxt_flag = 1'b0;
   end
 endmodule
