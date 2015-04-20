@@ -54,7 +54,7 @@ begin
       finished = 0;
       if(hash_enable == 1'b1)
         next_state = MSA1;
-      else if(hash_enable == 1'b0)
+      else
         next_state = IDLE;
     end
     MSA1:
@@ -69,28 +69,47 @@ begin
       add_en = 0;
       add2_en = 0;
       finished = 0;
-      if(rollover_flag == 1'b1)
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if(rollover_flag == 1'b1)
         next_state = COMP1;
       else if(rollover_flag == 1'b0)
         next_state = MSA1;
     end
     COMP1:
     begin
+      select = 0;
       enable_timer = 1;
       rollover_val = 64;
       msa_en = 0;
       comp_en = 1;
-      if(rollover_flag == 1'b1)
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if(rollover_flag == 1'b1)
         next_state = ADDH1;
       else if(rollover_flag == 1'b0)
         next_state = COMP1;
     end
     ADDH1:
     begin
+      select = 0;
       enable_timer = 0;
+      msa_en = 0;
       comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
       add_en = 1;
-      next_state = MSA2;
+      add2_en = 0;
+      finished = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else
+        next_state = MSA2;
     end
     MSA2:
     begin
@@ -99,63 +118,118 @@ begin
       rollover_val = 48;
       msa_en = 1;
       comp_en = 0;
-      if (rollover_flag == 1'b1)
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if (rollover_flag == 1'b1)
         next_state = COMP2;
       else if (rollover_flag == 1'b0)
         next_state = MSA2;
     end
     COMP2:
     begin
+      select = 1;
+      enable_timer = 1;
       rollover_val = 64;
       msa_en = 0;
       comp_en = 1;
-      if(rollover_flag == 1'b1)
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if(rollover_flag == 1'b1)
         next_state = ADDH2;
       else if(rollover_flag == 1'b0)
         next_state = COMP2;
     end
     ADDH2:
     begin
-      comp_en = 0;
+      select = 1;
       enable_timer = 0;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
       add_en = 1;
+      add2_en = 0;
       next_state = MSA3;
     end
     MSA3:
     begin
+      //select = 1;
       enable_timer = 1;
       rollover_val = 48;
+      msa_en = 0;
+      comp_en = 0;
       msa2_en = 1;
+      comp2_en = 0;
       add_en = 0;
-      if(rollover_val == 1'b1)
+      add2_en = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if(rollover_flag == 1'b1)
         next_state = COMP3;
       else
         next_state = MSA3;
     end
     COMP3:
     begin
+      //select = 1;
+      enable_timer = 1;
       rollover_val = 64;
+      msa_en = 0;
+      comp_en = 0;
       msa2_en = 0;
       comp2_en = 1;
-      if(rollover_val == 1'b1)
+      add_en = 0;
+      add2_en = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else if(rollover_flag == 1'b1)
         next_state = ADDH3;
-      else if(rollover_val == 1'b0)
+      else if(rollover_flag == 1'b0)
         next_state = COMP3; 
     end
     ADDH3:
     begin
-      comp2_en = 0;
+      //select = 1;
       enable_timer = 0;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
       add2_en = 1;
-      next_state = FINISHED;
+      finished = 0;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else 
+        next_state = FINISHED;
     end
     FINISHED:
     begin
+      //select = 1;
+      enable_timer = 0;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
       add2_en = 0;
       finished = 1;
-      next_state = IDLE;
+      if (hash_enable == 1'b1)
+        next_state = MSA1;
+      else  
+        next_state = IDLE;
     end
-  endcase
+endcase
 end
 endmodule
 
