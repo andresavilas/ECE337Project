@@ -1,0 +1,48 @@
+// $Id: $
+// File name:   miner_core_msa.sv
+// Created:     4/16/2015
+// Author:      Andres Avila
+// Lab Section: 337-04
+// Version:     1.0  Initial Design Entry
+// Description: Message Scheduling Array
+module miner_core_msa (
+  input wire [6:0] i,
+  input wire msa_en,
+  input wire clk,
+  input wire n_rst,
+  input wire [0:511] chunk,
+  output logic [0:63] [0:31] w 
+);
+  logic [0:31] s0;
+  logic [0:31] s1;
+  logic [0:31] w16;
+  logic [0:31] w7;
+  logic [0:31] w15;
+  logic [0:31] w2;
+  logic [0:31] out;
+  logic [0:63] [0:31] new_w;
+  reg [0:6] next_state;
+  reg [0:6] state;
+  always_ff @ (posedge clk, negedge n_rst) begin
+    if(n_rst == 0) begin
+      w <= 0;
+      state <= 15;
+    end else begin
+      w <= new_w;
+      state <= next_state;
+    end
+  end 
+  always_comb begin
+    next_state = state;
+    new_w = w;
+    case (state) 
+  15: begin
+    if(msa_en == 1) begin
+      next_state = 16;
+      new_w[0:15] = chunk;
+    end   
+  end
+  
+  endcase
+  end
+endmodule
