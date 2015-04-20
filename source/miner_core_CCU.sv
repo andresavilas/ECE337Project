@@ -75,6 +75,8 @@ begin
         next_state = COMP1;
       else if(rollover_flag == 1'b0)
         next_state = MSA1;
+      else
+        next_state = MSA1;
     end
     COMP1:
     begin
@@ -99,6 +101,7 @@ begin
     begin
       select = 0;
       enable_timer = 0;
+      rollover_val = 0;
       msa_en = 0;
       comp_en = 0;
       msa2_en = 0;
@@ -153,6 +156,7 @@ begin
     begin
       select = 1;
       enable_timer = 0;
+      rollover_val = 0;
       msa_en = 0;
       comp_en = 0;
       msa2_en = 0;
@@ -201,6 +205,7 @@ begin
     begin
       //select = 1;
       enable_timer = 0;
+      rollover_val = 0;
       msa_en = 0;
       comp_en = 0;
       msa2_en = 0;
