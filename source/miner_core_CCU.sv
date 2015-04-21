@@ -20,7 +20,7 @@ module miner_core_CCU
   output reg finished
 );
 
-typedef enum bit [3:0] {IDLE, MSA1, COMP1, ADDH1, MSA2, COMP2, ADDH2, MSA3, COMP3, ADDH3, FINISHED} stateType;
+typedef enum bit [4:0] {IDLE, MSA1, WAIT1, COMP1, WAIT2, ADDH1, MSA2, WAIT3, COMP2, WAIT4, ADDH2, MSA3, WAIT5, COMP3, WAIT6, ADDH3, FINISHED} stateType;
 stateType state;
 stateType next_state;
 
@@ -39,6 +39,7 @@ end
 always_comb
 begin 
   next_state = state;
+  comp_en = 0;
   case(state)
     IDLE:
     begin
@@ -69,14 +70,26 @@ begin
       add_en = 0;
       add2_en = 0;
       finished = 0;
+      next_state = WAIT1;
+    end
+    WAIT1:
+    begin
+      select = 0;
+      enable_timer = 1;
+      rollover_val = 48;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
-      else if(rollover_flag == 1'b1)
+      else if (rollover_flag == 1'b1)
         next_state = COMP1;
-      else if(rollover_flag == 1'b0)
-        next_state = MSA1;
       else
-        next_state = MSA1;
+        next_state = WAIT1;
     end
     COMP1:
     begin
@@ -90,12 +103,26 @@ begin
       add_en = 0;
       add2_en = 0;
       finished = 0;
+      next_state = WAIT2;
+    end
+    WAIT2:
+    begin
+      select = 0;
+      enable_timer = 1;
+      rollover_val = 64;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
-      else if(rollover_flag == 1'b1)
+      else if (rollover_flag == 1'b1)
         next_state = ADDH1;
-      else if(rollover_flag == 1'b0)
-        next_state = COMP1;
+      else
+        next_state = WAIT2;
     end
     ADDH1:
     begin
@@ -109,10 +136,7 @@ begin
       add_en = 1;
       add2_en = 0;
       finished = 0;
-      if (hash_enable == 1'b1)
-        next_state = MSA1;
-      else
-        next_state = MSA2;
+      next_state = MSA2;
     end
     MSA2:
     begin
@@ -126,12 +150,26 @@ begin
       add_en = 0;
       add2_en = 0;
       finished = 0;
+      next_state = WAIT3;
+    end
+    WAIT3:
+    begin
+      select = 1;
+      enable_timer = 1;
+      rollover_val = 48;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
       else if (rollover_flag == 1'b1)
         next_state = COMP2;
-      else if (rollover_flag == 1'b0)
-        next_state = MSA2;
+      else
+        next_state = WAIT3;
     end
     COMP2:
     begin
@@ -145,12 +183,26 @@ begin
       add_en = 0;
       add2_en = 0;
       finished = 0;
+      next_state = WAIT4;
+    end
+    WAIT4:
+    begin
+      select = 1;
+      enable_timer = 1;
+      rollover_val = 64;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
-      else if(rollover_flag == 1'b1)
+      else if (rollover_flag == 1'b1)
         next_state = ADDH2;
-      else if(rollover_flag == 1'b0)
-        next_state = COMP2;
+      else
+        next_state = WAIT4;
     end
     ADDH2:
     begin
@@ -176,16 +228,31 @@ begin
       comp2_en = 0;
       add_en = 0;
       add2_en = 0;
+      finished = 0;
+      next_state = WAIT5;
+    end
+    WAIT5:
+    begin
+      select = 0;
+      enable_timer = 1;
+      rollover_val = 48;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
-      else if(rollover_flag == 1'b1)
+      else if (rollover_flag == 1'b1)
         next_state = COMP3;
       else
-        next_state = MSA3;
+        next_state = WAIT5;
     end
     COMP3:
     begin
-      //select = 1;
+      select = 0;
       enable_timer = 1;
       rollover_val = 64;
       msa_en = 0;
@@ -194,12 +261,26 @@ begin
       comp2_en = 1;
       add_en = 0;
       add2_en = 0;
+      next_state = WAIT6; 
+    end
+    WAIT6:
+    begin
+      select = 0;
+      enable_timer = 1;
+      rollover_val = 64;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
-      else if(rollover_flag == 1'b1)
+      else if (rollover_flag == 1'b1)
         next_state = ADDH3;
-      else if(rollover_flag == 1'b0)
-        next_state = COMP3; 
+      else
+        next_state = WAIT6;
     end
     ADDH3:
     begin
@@ -233,8 +314,8 @@ begin
         next_state = MSA1;
       else  
         next_state = IDLE;
-    end
-endcase
+      end
+    endcase
 end
 endmodule
 
