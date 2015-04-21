@@ -15,7 +15,7 @@ module tb_miner_core_CCU();
 	end
 	miner_core_CCU DUT(.clk(clk), .n_rst(n_rst), .hash_enable(hash_enable), .rollover_flag(rollover_flag), .select(select), .enable_timer(enable_timer), .rollover_val(rollover_val), .msa_en(msa_en), .comp_en(comp_en), .msa2_en(msa2_en), .comp2_en(comp2_en), .add_en(add_en), .add2_en(add2_en), .finished(finished));
 	miner_core_timer DUT2(.clk(clk), .n_rst(n_rst), .enable_timer(enable_timer), .rollover_val(rollover_val), .count(count), .rollover_flag(rollover_flag));
-	//miner_core_msa DUT3(.i(count+15), .msa_en(msa_en), .clk(clk), .n_rst(n_rst), .chunk(chunk), .w(w));
+	miner_core_msa DUT3(.i(count+15), .msa_en(msa_en), .clk(clk), .n_rst(n_rst), .chunk(chunk), .w(w));
 	initial
 	begin
 	   tb_test_num = 0;
