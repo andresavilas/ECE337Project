@@ -6,6 +6,8 @@ module tb_miner_core_CCU();
   reg [6:0]rollover_val;
   reg [6:0]count;
   reg clk, n_rst, hash_enable, rollover_flag, select, enable_timer, msa_en, comp_en, msa2_en, comp2_en, add_en, add2_en, finished;
+  reg [0:511] chunk;
+  reg [0:63] [0:31] w;
   always
 	begin
 	  clk = 1'b0;
@@ -26,6 +28,7 @@ module tb_miner_core_CCU();
 	   hash_enable = 1'b0;
 	   #(CLK_PERIOD * 2.25);	// Release the reset away from a clock edge
 	   n_rst	= 1'b1; 	// Deactivate the chip reset
+	   chunk = 1238290;
 	   #(CLK_PERIOD);
 	   //Wait for another period
 	   #(CLK_PERIOD); 
