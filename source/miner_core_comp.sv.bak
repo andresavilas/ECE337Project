@@ -45,7 +45,7 @@ module miner_core_comp (
     case (state)
       0: begin
         if(comp_en == 0) begin
-          new_h = h;
+          new_h = w;
         end
       end
         1: begin

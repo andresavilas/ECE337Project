@@ -39,7 +39,7 @@ module miner_core_msa (
     if(msa_en == 1) begin
       next_state = 16;
       new_w[0:15] = chunk;
-    end   
+    end 
   end
     16: begin
     w15 = w[1];
