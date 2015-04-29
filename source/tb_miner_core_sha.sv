@@ -6,7 +6,7 @@
 // Version:     1.0  Initial Design Entry
 // Description: SHA Test Bench
 `timescale 1ns / 10ps
-localparam CLK_PERIOD = 20;
+localparam CLK_PERIOD = 10;
 module tb_miner_core_sha();
   logic clk;
   logic n_rst;

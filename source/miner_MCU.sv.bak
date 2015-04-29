@@ -57,11 +57,7 @@ begin
       else if (finished == 1'b0)
         next_state = WAIT;
       else if (finished == 1'b1)
-        if(send_data == 1'b1) begin
-          next_state = IDLE;
-        end else begin
-          next_state = OUT;
-        end
+        next_state = OUT;
     end
     OUT:
     begin

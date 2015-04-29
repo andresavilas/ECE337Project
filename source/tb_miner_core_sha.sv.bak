@@ -12,8 +12,6 @@ module tb_miner_core_sha();
   logic n_rst;
   logic msa_en;
   logic add_en;
-  logic [0:63] [0:31] w;
-  logic [0:7] [0:31] a_h;
   logic comp_en;
   logic [0:511] chunk;
   integer ct;

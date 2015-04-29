@@ -522,5 +522,9 @@ module miner_core_msa (
     new_w[63] = w16 + s0 + s1 + w7;
   end
   endcase
+  if(msa_en == 1) begin
+      next_state = 16;
+      new_w[0:15] = chunk;
+  end
   end
 endmodule

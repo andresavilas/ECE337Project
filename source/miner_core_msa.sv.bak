@@ -6,7 +6,6 @@
 // Version:     1.0  Initial Design Entry
 // Description: Message Scheduling Array
 module miner_core_msa (
-  input wire [6:0] i,
   input wire msa_en,
   input wire clk,
   input wire n_rst,

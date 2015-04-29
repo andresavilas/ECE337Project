@@ -6,7 +6,7 @@
 // Version:     1.0  Initial Design Entry
 // Description: SHA Core Test Bench
 `timescale 1ns / 10ps
-localparam CLK_PERIOD = 10;
+localparam CLK_PERIOD = 8;
 module tb_miner_core();
   reg clk, n_rst, hash_enable, finished, correct;
   reg [0:607]block;
