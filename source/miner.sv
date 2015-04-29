@@ -29,7 +29,7 @@ module miner
   assign block = rx_data[863:256];
   miner_counter #(1) MC0(clk,n_rst,(send_data || data_ready), count_enable, nonce, nonce_flag); 
   miner_MCU MCU0(send_data,data_ready,finished,clk,n_rst,count_enable,hash_enable);
-  miner_core MINC0(clk,n_rst,hash_enable,block,{nonce[7:0],nonce[15:8],nonce[23:16],nonce[31:24]},target,fin,correct,hashed);
+  miner_core MINC0(clk,n_rst,hash_enable,block,nonce,target,fin,correct,hashed);
   always_comb begin
     if(fin == 1'b1) begin
       finished = 1;

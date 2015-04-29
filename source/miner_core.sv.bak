@@ -8,7 +8,7 @@
 module miner_core(
   input wire clk, n_rst, hash_enable,
   input wire [0:607] block,
-  input wire [31:0] nonce,
+  input wire [0:31] nonce,
   input wire [0:255] target,
   output wire finished,
   output wire correct,

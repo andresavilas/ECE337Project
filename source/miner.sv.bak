@@ -42,6 +42,8 @@ module miner
       end
     end else begin
       finished = 0;
+      correcthash = 256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+      correctnonce = 0;
     end
   end
   always_comb begin
