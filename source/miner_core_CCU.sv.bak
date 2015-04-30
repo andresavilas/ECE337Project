@@ -131,6 +131,13 @@ begin
       select = 1;
       enable_timer = 1;
       rollover_val = 64;
+      msa_en = 0;
+      comp_en = 0;
+      msa2_en = 0;
+      comp2_en = 0;
+      add_en = 0;
+      add2_en = 0;
+      finished = 0;
       if (hash_enable == 1'b1)
         next_state = MSA1;
       else if (rollover_flag == 1'b1)
