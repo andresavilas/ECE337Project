@@ -33,5 +33,14 @@ module tb_miner();
 	  data_ready = 0;
 	  @(posedge send_data);
 	  $display("%h",tx_data);
+	  rx_data = {608'h0145678981cd02ab7e569e8bcd9317e2fe99f2de44d49ab2b8851ba4a308000000000000e320b6c2fffc8d750423db8b1eb942ae710e951ed797f7affc8892b0f1fc122bc7f5d74df2b9441a,256'hF000000000000000000000000000000000000000000000000000000000000000};
+    #(CLK_PERIOD);
+    //no need for n_rst
+	  #(CLK_PERIOD);
+	  data_ready = 1;
+	  #(CLK_PERIOD);
+	  data_ready = 0;
+	  @(posedge send_data);
+	  $display("%h",tx_data);
 	end
 endmodule
