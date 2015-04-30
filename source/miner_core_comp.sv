@@ -42,10 +42,13 @@ module miner_core_comp (
   end
   always_comb begin
     next_state = state;
+    new_k = k[0];
+    new_h = h;
+    new_w = w[0];
     case (state)
       0: begin
-        if(comp_en == 0) begin
-          new_h = h;
+        if(comp_en == 1) begin
+          next_state = 1;
         end
       end
         1: begin
