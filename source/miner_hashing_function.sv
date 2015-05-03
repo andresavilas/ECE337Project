@@ -29,14 +29,10 @@ module miner_hashing_function
   reg [0:255] correctHashTemp;
   reg [0:31] correctNonceTemp;
   
-  
   generate
     for(i = 0; i <= (NUM_CORES - 1); i = i + 1)
     begin
       miner_core MCX(.clk(clk), .n_rst(n_rst), .hash_enable(hash_enable), .nonce(nonce+i), .block(block), .target(target), .hashed(output_hashes[i]), .finished(output_finished[i]), .correct(output_correct[i]));
-      //assign correct_hash = (output_finished[i] & output_correct[i])? output_hashes[i]: 64'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
-      //assign correct_nonce = (output_finished[i] & output_correct[i])? (nonce+i):0;
-      //assign finished = output_finished[i];
     end
   endgenerate
   
@@ -47,9 +43,6 @@ module miner_hashing_function
     correctNonceTemp = 0;
     for(j = 0; j <= (NUM_CORES - 1); j = j + 1)
     begin
-      //correctHashTemp = (output_correct[j])? output_hashes[j]: 256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
-      //correctNonceTemp = (output_correct[j])? (nonce+j):0;
-      
       correctHashTemp = output_hashes[j];
       correctNonceTemp = nonce + j;
       
