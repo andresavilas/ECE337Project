@@ -11,10 +11,9 @@ module uart_tx
   input wire n_rst,
   input wire [287:0] tx_data,
   input wire send_data,
-  output logic [359:0] buffer,
   output wire serial_out
 );
-  //logic [359:0] buffer;
+  logic [359:0] buffer;
   logic done;
   logic tim_en;
   logic load_en;
@@ -23,7 +22,7 @@ module uart_tx
   logic [3:0] count2;
   genvar i;
   generate 
-    for(i = 0;i < 36;i = i - 1) begin
+    for(i = 0;i < 36;i = i + 1) begin
       assign buffer[((35-i)*10)+9] = 1'b0;
       assign buffer[((35-i)*10)+8:((35-i)*10)+1] = tx_data[((35-i)*8)+7:((35-i)*8)];
       assign buffer[((35-i)*10)] = 1'b1;

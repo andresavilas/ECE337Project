@@ -11,10 +11,9 @@ module uart_tx
   input wire n_rst,
   input wire [287:0] tx_data,
   input wire send_data,
-  output logic [359:0] buffer,
   output wire serial_out
 );
-  //logic [359:0] buffer;
+  logic [359:0] buffer;
   logic done;
   logic tim_en;
   logic load_en;
@@ -32,5 +31,5 @@ module uart_tx
   uart_tx_TCU UTT(.clk(clk),.n_rst(n_rst),.send_data(send_data),.done(done),.tim_en(tim_en),.load_en(load_en));
   flex_pts_sr #(360,1) FPS(.clk(clk),.n_rst(n_rst),.shift_enable(shift_enable),.load_enable(load_en),.parallel_in(buffer),.serial_out(serial_out));
   flex_counter #(9) FC2(.clk(clk),.n_rst(n_rst),.clear(send_data),.count_enable(shift_enable),.rollover_val(9'b101101000),.count_out(count),.rollover_flag(done));
-  flex_counter #(4) FC3(.clk(clk),.n_rst(n_rst),.clear(send_data),.count_enable(tim_en),.rollover_val(4'b1000),.count_out(count2),.rollover_flag(shift_enable));
+  flex_counter #(4) FC3(.clk(clk),.n_rst(n_rst),.clear(send_data),.count_enable(tim_en),.rollover_val(4'b1001),.count_out(count2),.rollover_flag(shift_enable));
 endmodule
