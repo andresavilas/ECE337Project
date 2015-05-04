@@ -5,19 +5,15 @@
 // Lab Section: 337-04
 // Version:     1.0  Initial Design Entry
 // Description: UART Transmitter
-module uart_tx 
-#(
-  parameter NUMBITS = 288
-)
+module uart_tx2 
 (
   input wire clk,
   input wire n_rst,
-  input wire [NUMBITS-1:0] tx_data,
+  input wire [287:0] tx_data,
   input wire send_data,
   output wire serial_out
 );
-  localparam size = (NUMBITS/8)*2 + NUMBITS;
-  logic [size-1:0] buffer;
+  logic [359:0] buffer;
   logic done;
   logic tim_en;
   logic load_en;

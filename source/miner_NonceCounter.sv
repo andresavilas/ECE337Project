@@ -24,7 +24,7 @@ module miner_NonceCounter
   always_ff @ (posedge clk,negedge n_rst) begin
     if(n_rst == 1'b0) 
     begin
-      count_out <= 0;
+      count_out <= 9468667; //change to 0
       rollover_flag <= 1'b0;
     end 
     else begin
@@ -36,7 +36,7 @@ module miner_NonceCounter
     nxt_data = count_out;
     if(clear == 1'b1) 
     begin
-      nxt_data = 0;
+      nxt_data = 9468667; //change to 0
     end 
     else if(count_enable == 1'b1 && count_out == rollover_val) 
     begin

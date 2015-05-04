@@ -16,9 +16,8 @@ module miner
   output logic [287:0] tx_data
 );
   
-  logic finished,correct,fin;
+  logic finished;
   logic [607:0] block;
-  logic [255:0] hashed;
   logic [255:0] correct_hash;
   logic [255:0] target;
   logic [31:0] correct_nonce;
@@ -27,13 +26,15 @@ module miner
   logic count_enable;
   logic hash_enable;
   assign target = rx_data[255:0];
-  assign block = rx_data[863:256];
-  
-  miner_counter #(1) MC0(clk,n_rst,(send_data || data_ready), count_enable, nonce, nonce_flag); 
-  miner_MCU MCU0(send_data,data_ready,finished,clk,n_rst,count_enable,hash_enable);
-  miner_hashing_function MHF1(clk,n_rst,hash_enable,nonce,block,target,correct_hash,correct_nonce,finished);
+  assign block = rx_data[863:256]; 
+  miner_counter MC0(clk,n_rst,(send_data || data_ready), count_enable, nonce, nonce_flag); 
+  miner_MCU MCU0(send_data,data_ready,finished,clk,n_rst,count_enable,hash_enable,nonce_flag);
+  miner_hashing_function #(1) MHF1(clk,n_rst,hash_enable,nonce,block,target,correct_hash,correct_nonce,finished);
   always_comb begin
-    if(finished == 1) begin
+    if(nonce_flag == 1) begin
+      tx_data = {256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,32'h00000000};
+      send_data = 1;
+    end else if(finished == 1) begin
       if(correct_hash != 256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF) begin
         tx_data = {correct_hash,correct_nonce};
         send_data = 1;

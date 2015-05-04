@@ -13,7 +13,8 @@ module miner_MCU
   input wire clk,
   input wire n_rst,
   output logic count_enable,
-  output logic hash_enable
+  output logic hash_enable,
+  input wire nonce_flag
 );
 
 typedef enum bit [2:0] {IDLE, SHA, WAIT, OUT, INCREMENTNONCE} stateType;
@@ -47,8 +48,12 @@ begin
     end
     SHA:
     begin
-      hash_enable = 1;
-      next_state = WAIT;
+      if(nonce_flag == 1'b1) begin
+        next_state = IDLE;
+      end else begin
+        hash_enable = 1;
+        next_state = WAIT;
+      end
     end
     WAIT:
     begin 

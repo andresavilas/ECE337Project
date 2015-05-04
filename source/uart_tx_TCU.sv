@@ -40,7 +40,7 @@ module uart_tx_TCU(
       WAIT:
       begin
         tim_en = 1;
-        if(done == 1'b1 || send_data == 1'b1) begin
+        if(done == 1'b1) begin
           next_state = IDLE;
         end
       end

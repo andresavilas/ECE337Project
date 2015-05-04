@@ -7,7 +7,7 @@
 // Description: NonceCounter
 module miner_NonceCounter
 #(
-  parameter CORES = 1;
+  parameter CORES = 1,
   parameter NUM_CNT_BITS = 4
 )
 (

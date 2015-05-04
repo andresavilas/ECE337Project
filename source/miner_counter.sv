@@ -6,9 +6,6 @@
 // Version:     1.0  Initial Design Entry
 // Description: Counter
 module miner_counter
-#(
-  parameter CORES = 1
-)
 (
   input wire clk,
   input wire n_rst,
@@ -17,6 +14,6 @@ module miner_counter
   output reg [31:0]nonce,
   output reg nonce_flag
 );
-miner_NonceCounter #(CORES,32) MNC1(clk, n_rst, clear, count_enable, 2^32 - CORES, nonce, nonce_flag);
+miner_NonceCounter #(1,32) MNC1(clk, n_rst, clear, count_enable, 32'hFFFFFFFF - CORES + 1, nonce, nonce_flag);
 
 endmodule
