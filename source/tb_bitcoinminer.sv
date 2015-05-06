@@ -19,7 +19,7 @@ module tb_bitcoinminer();
 	 #(CLK_PERIOD/2.0);	  
 	end
 	bitcoinminer DUT(.clk(clk),.n_rst(n_rst),.serial_in(serial_in),.serial_out(serial_out));
-	uart_tx DUT2(.clk(clk),.n_rst(n_rst),.tx_data(tx_data),.send_data(send_data),.serial_out(serial_in));
+	uart_tx2 DUT2(.clk(clk),.n_rst(n_rst),.tx_data(tx_data),.send_data(send_data),.serial_out(serial_in));
 	initial
 	begin
 	  tx_data = 288'h01000000b7bd9f286a77d60ac34fad57c74dd681ffb340b1095200426d0577e600000000;

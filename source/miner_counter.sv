@@ -14,6 +14,6 @@ module miner_counter
   output reg [31:0]nonce,
   output reg nonce_flag
 );
-miner_NonceCounter #(1,32) MNC1(clk, n_rst, clear, count_enable, 32'hFFFFFFFF - CORES + 1, nonce, nonce_flag);
+miner_NonceCounter #(3,32) MNC1(clk, n_rst, clear, count_enable, 32'hFFFFFFFF - CORES + 1, nonce, nonce_flag);
 
 endmodule
