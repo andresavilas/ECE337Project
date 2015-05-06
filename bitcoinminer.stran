@@ -1,0 +1,51 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.16.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work.tb_bitcoinminer 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uartrx_rcu(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_MCU(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_CCU(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_msa(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_comp(fast)".
+# Loading sv_std.std
+# Loading work.tb_bitcoinminer_sv_unit(fast)
+# Loading work.tb_bitcoinminer(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# ** Note: (vsim-8718) Design Unit miner_core(fast) has multiple coverage profiles (3)
+add wave *
+run 600000 ns
+restart -f
+# Loading sv_std.std
+# Loading work.tb_bitcoinminer_sv_unit(fast)
+# Loading work.tb_bitcoinminer(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# ** Note: (vsim-8718) Design Unit miner_core(fast) has multiple coverage profiles (3)
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/tx_data
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/target
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/send_data
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/ntx_data
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/nonce_flag
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/nonce
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/next_data
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/hash_enable
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/finished
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/count_enable
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/correct_nonce
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/correct_hash
+add wave -position end  sim:/tb_bitcoinminer/DUT/MIN/block
+restart -f;run 600000 ns
+# Loading sv_std.std
+# Loading work.tb_bitcoinminer_sv_unit(fast)
+# Loading work.tb_bitcoinminer(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# ** Note: (vsim-8718) Design Unit miner_core(fast) has multiple coverage profiles (3)

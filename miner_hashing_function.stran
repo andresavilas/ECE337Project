@@ -1,0 +1,49 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.16.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work.tb_miner_hashing_function 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_msa(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_CCU(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_comp(fast)".
+# Loading sv_std.std
+# Loading work.tb_miner_hashing_function_sv_unit(fast)
+# Loading work.tb_miner_hashing_function(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# ** Note: (vsim-8718) Design Unit miner_core(fast) has multiple coverage profiles (3)
+add wave *
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mg108  Hostname: ee215lnx03.ecn.purdue.edu  ProcessID: 22650
+#           Attempting to use alternate WLF file "./wlftpK9jpH".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftpK9jpH
+run 10000 ns
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/output_hashes
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/output_finished
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/output_correct
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/j
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/finishedTemp
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/finished
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/correct_nonce
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/correct_hash
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/correctNonceTemp
+add wave -position end  sim:/tb_miner_hashing_function/MHF1/correctHashTemp
+restart -f; run 10000 ns
+# Loading sv_std.std
+# Loading work.tb_miner_hashing_function_sv_unit(fast)
+# Loading work.tb_miner_hashing_function(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# ** Note: (vsim-8718) Design Unit miner_core(fast) has multiple coverage profiles (3)

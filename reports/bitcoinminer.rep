@@ -1,0 +1,2277 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'bitcoinminer' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : bitcoinminer
+Version: G-2012.06
+Date   : Tue May  5 11:51:19 2015
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: MIN/MHF1/genblk1[2].MCX/SHA2/C0/state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MIN/MHF1/genblk1[2].MCX/SHA2/C0/h_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/state_reg[2]/CLK (DFFSR)
+                                                          0.00 #     0.00 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/state_reg[2]/Q (DFFSR)
+                                                          0.53       0.53 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U545/Y (INVX2)          0.18       0.71 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U1172/Y (INVX8)         0.15       0.86 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U719/Y (INVX8)          0.10       0.96 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U1540/Y (NAND3X1)       0.13       1.09 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U1153/Y (INVX4)         0.18       1.27 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U949/Y (AND2X2)         0.21       1.48 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U1117/Y (INVX1)         0.22       1.70 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2045/Y (NAND3X1)       0.27       1.97 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2046/Y (INVX2)         0.21       2.18 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2312/Y (NAND3X1)       0.16       2.34 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2314/Y (NOR2X1)        0.17       2.50 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2320/Y (NAND2X1)       0.18       2.68 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/A[9] (miner_core_comp_0_DW01_add_71)
+                                                          0.00       2.68 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U274/Y (NOR2X1)
+                                                          0.26       2.94 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U271/Y (OAI21X1)
+                                                          0.16       3.09 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U269/Y (AOI21X1)
+                                                          0.24       3.33 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U217/Y (OAI21X1)
+                                                          0.19       3.52 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U396/Y (AOI21X1)
+                                                          0.25       3.77 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U394/Y (INVX2)
+                                                          0.19       3.95 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/U205/Y (XNOR2X1)
+                                                          0.25       4.20 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_1_root_add_0_root_add_389_4/SUM[14] (miner_core_comp_0_DW01_add_71)
+                                                          0.00       4.20 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/A[14] (miner_core_comp_0_DW01_add_68)
+                                                          0.00       4.20 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U358/Y (OR2X2)
+                                                          0.32       4.53 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U187/Y (AOI21X1)
+                                                          0.13       4.66 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U159/Y (OAI21X1)
+                                                          0.14       4.80 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U157/Y (AOI21X1)
+                                                          0.23       5.03 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U116/Y (OAI21X1)
+                                                          0.21       5.24 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U339/Y (INVX2)
+                                                          0.16       5.40 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U109/Y (OAI21X1)
+                                                          0.18       5.58 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/U343/Y (XNOR2X1)
+                                                          0.29       5.87 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_0_root_add_0_root_add_389_4/SUM[22] (miner_core_comp_0_DW01_add_68)
+                                                          0.00       5.87 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/B[22] (miner_core_comp_0_DW01_add_66)
+                                                          0.00       5.87 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U97/Y (NOR2X1)
+                                                          0.19       6.05 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U390/Y (INVX2)
+                                                          0.16       6.21 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U92/Y (AOI21X1)
+                                                          0.14       6.35 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U90/Y (OAI21X1)
+                                                          0.14       6.49 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U88/Y (AOI21X1)
+                                                          0.17       6.66 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U35/Y (OAI21X1)
+                                                          0.14       6.80 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U353/Y (INVX2)
+                                                          0.12       6.91 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U329/Y (INVX1)
+                                                          0.11       7.02 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U19/Y (AOI21X1)
+                                                          0.16       7.18 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/U314/Y (XNOR2X1)
+                                                          0.20       7.38 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/add_397/SUM[30] (miner_core_comp_0_DW01_add_66)
+                                                          0.00       7.38 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2401/Y (NAND2X1)       0.06       7.44 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U639/Y (NAND2X1)        0.15       7.59 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U2402/Y (OAI22X1)       0.10       7.69 f
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/U1135/Y (INVX1)         0.11       7.80 r
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/h_reg[4][1]/D (DFFSR)
+                                                          0.00       7.80 r
+  data arrival time                                                  7.80
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  MIN/MHF1/genblk1[2].MCX/SHA2/C0/h_reg[4][1]/CLK (DFFSR)
+                                                          0.00       2.00 r
+  library setup time                                     -0.22       1.78
+  data required time                                                 1.78
+  --------------------------------------------------------------------------
+  data required time                                                 1.78
+  data arrival time                                                 -7.80
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -6.02
+
+
+1
+ 
+****************************************
+Report : area
+Design : bitcoinminer
+Version: G-2012.06
+Date   : Tue May  5 11:51:19 2015
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                            4
+Number of nets:                          1158
+Number of cells:                            3
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:       117301419.000000
+Noncombinational area:    27048384.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          144349803.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : bitcoinminer
+Version: G-2012.06
+Date   : Tue May  5 11:51:46 2015
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+bitcoinminer                            477.385 1.76e+04 4.30e+04 1.81e+04 100.0
+  MIN (miner)                           442.242 1.63e+04 4.21e+04 1.67e+04  92.4
+    MHF1 (miner_hashing_function_NUM_CORES3)
+                                        434.498 1.59e+04 4.18e+04 1.64e+04  90.5
+      r318 (miner_hashing_function_NUM_CORES3_DW01_inc_1)
+                                       4.75e-03 1.11e-02   10.676 1.58e-02   0.0
+      r319 (miner_hashing_function_NUM_CORES3_DW01_add_1)
+                                       3.14e-03 9.31e-03    9.977 1.25e-02   0.0
+      genblk1[2].MCX (miner_core_0)     144.901 5.31e+03 1.39e+04 5.45e+03  30.2
+        lt_30 (miner_core_0_DW_cmp_0)  8.28e-02 8.67e-02   64.866    0.170   0.0
+        SHA2 (miner_core_sha_0)          72.099 2.65e+03 6.85e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_0_DW01_add_15)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_4 (miner_core_sha_0_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_0_DW01_add_13)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_5 (miner_core_sha_0_DW01_add_9)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32 (miner_core_sha_0_DW01_add_8)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_2 (miner_core_sha_0_DW01_add_10)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_8 (miner_core_sha_0_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_0_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_0)          7.266  269.705  780.260  276.972   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_0_DW01_add_71)
+                                          0.000    0.000   21.915 2.19e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_0_DW01_add_67)
+                                          0.000    0.000   19.303 1.93e-05   0.0
+            add_397 (miner_core_comp_0_DW01_add_66)
+                                          0.000    0.000   19.748 1.97e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_0_DW01_add_68)
+                                          0.000    0.000   21.482 2.15e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_0_DW01_add_59)
+                                          0.000    0.000   19.265 1.93e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_0_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_0_DW01_add_54)
+                                          0.000    0.000   18.737 1.87e-05   0.0
+            add_382 (miner_core_comp_0_DW01_add_53)
+                                          0.000    0.000   18.741 1.87e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_0_DW01_add_55)
+                                          0.000    0.000   20.791 2.08e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_0_DW01_add_45)
+                                          0.000    0.000   22.449 2.24e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_0_DW01_add_38)
+                                          0.000    0.000   19.265 1.93e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_0_DW01_add_31)
+                                          0.000    0.000   21.018 2.10e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_0_DW01_add_26)
+                                          0.000    0.000   21.367 2.14e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_0_DW01_add_24)
+                                          0.000    0.000   21.465 2.15e-05   0.0
+          M0 (miner_core_msa_0)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_0_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_0_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_0_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_0_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_0_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_0_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_0_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_0_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_0_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_0_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_0_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_0_DW01_add_277)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_0_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_0_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_0_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_0_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_0_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_0_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_0_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_0_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_0_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_0_DW01_add_272)
+                                          0.000    0.000   21.153 2.12e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_0_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_0_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_0_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_0_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_0_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_0_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_0_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_0_DW01_add_268)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_0_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_0_DW01_add_267)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_0_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_0_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_0_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_0_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_0_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_0_DW01_add_264)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_0_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_0_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_0_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_0_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_0_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_0_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_0_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_0_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_0_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_0_DW01_add_287)
+                                          0.000    0.000   21.251 2.13e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_0_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_0_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_0_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_0_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_0_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_0_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_0_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_0_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_0_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_0_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_0_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_0_DW01_add_254)
+                                          0.000    0.000   21.270 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_0_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_0_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_0_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_0_DW01_add_252)
+                                          0.000    0.000   21.239 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_0_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_0_DW01_add_251)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_0_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_0_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_0_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_0_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_0_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_0_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_0_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_0_DW01_add_247)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_0_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_0_DW01_add_246)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_0_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_0_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_0_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_0_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_0_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_0_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_0_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_0_DW01_add_285)
+                                          0.000    0.000   21.197 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_0_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_0_DW01_add_284)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_0_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_0_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_0_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_0_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_0_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_0_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_0_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_0_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_0_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_0_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_0_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_0_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_0_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_0_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_0_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_0_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_0_DW01_add_232)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_0_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_0_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_0_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_0_DW01_add_228)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_0_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_0_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_0_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_0_DW01_add_224)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_0_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_0_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_0_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_0_DW01_add_220)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_0_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_0_DW01_add_218)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_0_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_0_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_0_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_0_DW01_add_214)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_0_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_0_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_0_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_0_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_0_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_0_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_0_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_0_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_0_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_0_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_0_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_0_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_0_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_0_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_0_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_0_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_0_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_0_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_0_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_0_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_0_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_0_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_0_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_0_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        SHA1 (miner_core_sha_1)          72.079 2.65e+03 6.86e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_1_DW01_add_15)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_4 (miner_core_sha_1_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_1_DW01_add_13)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_5 (miner_core_sha_1_DW01_add_9)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32 (miner_core_sha_1_DW01_add_8)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_2 (miner_core_sha_1_DW01_add_10)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_8 (miner_core_sha_1_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_1_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_1)          7.266  269.804  781.304  277.071   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_1_DW01_add_71)
+                                          0.000    0.000   21.892 2.19e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_1_DW01_add_67)
+                                          0.000    0.000   19.482 1.95e-05   0.0
+            add_397 (miner_core_comp_1_DW01_add_66)
+                                          0.000    0.000   19.897 1.99e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_1_DW01_add_68)
+                                          0.000    0.000   20.598 2.06e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_1_DW01_add_59)
+                                          0.000    0.000   19.296 1.93e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_1_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_1_DW01_add_54)
+                                          0.000    0.000   18.772 1.88e-05   0.0
+            add_382 (miner_core_comp_1_DW01_add_53)
+                                          0.000    0.000   19.213 1.92e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_1_DW01_add_55)
+                                          0.000    0.000   20.999 2.10e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_1_DW01_add_45)
+                                          0.000    0.000   22.220 2.22e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_1_DW01_add_38)
+                                          0.000    0.000   19.218 1.92e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_1_DW01_add_31)
+                                          0.000    0.000   21.475 2.15e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_1_DW01_add_26)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_1_DW01_add_24)
+                                          0.000    0.000   21.465 2.15e-05   0.0
+          M0 (miner_core_msa_1)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_1_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_1_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_1_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_1_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_1_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_1_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_1_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_1_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_1_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_1_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_1_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_1_DW01_add_277)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_1_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_1_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_1_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_1_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_1_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_1_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_1_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_1_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_1_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_1_DW01_add_272)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_1_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_1_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_1_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_1_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_1_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_1_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_1_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_1_DW01_add_268)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_1_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_1_DW01_add_267)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_1_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_1_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_1_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_1_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_1_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_1_DW01_add_264)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_1_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_1_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_1_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_1_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_1_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_1_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_1_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_1_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_1_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_1_DW01_add_287)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_1_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_1_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_1_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_1_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_1_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_1_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_1_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_1_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_1_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_1_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_1_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_1_DW01_add_254)
+                                          0.000    0.000   21.270 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_1_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_1_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_1_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_1_DW01_add_252)
+                                          0.000    0.000   21.215 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_1_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_1_DW01_add_251)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_1_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_1_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_1_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_1_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_1_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_1_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_1_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_1_DW01_add_247)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_1_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_1_DW01_add_246)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_1_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_1_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_1_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_1_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_1_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_1_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_1_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_1_DW01_add_285)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_1_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_1_DW01_add_284)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_1_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_1_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_1_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_1_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_1_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_1_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_1_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_1_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_1_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_1_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_1_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_1_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_1_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_1_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_1_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_1_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_1_DW01_add_232)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_1_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_1_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_1_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_1_DW01_add_228)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_1_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_1_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_1_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_1_DW01_add_224)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_1_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_1_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_1_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_1_DW01_add_220)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_1_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_1_DW01_add_218)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_1_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_1_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_1_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_1_DW01_add_214)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_1_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_1_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_1_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_1_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_1_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_1_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_1_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_1_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_1_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_1_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_1_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_1_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_1_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_1_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_1_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_1_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_1_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_1_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_1_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_1_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_1_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_1_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_1_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_1_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        TIM1 (miner_core_timer_0)         0.000    8.189   10.369    8.189   0.0
+          FC1 (flex_counter_NUM_CNT_BITS7_0)
+                                          0.000    8.189   10.369    8.189   0.0
+            add_46 (flex_counter_NUM_CNT_BITS7_0_DW01_inc_0)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+        CCU1 (miner_core_CCU_0)           0.000    5.118    9.678    5.118   0.0
+      genblk1[1].MCX (miner_core_1)     144.903 5.31e+03 1.39e+04 5.45e+03  30.2
+        lt_30 (miner_core_1_DW_cmp_0)  8.48e-02 8.96e-02   66.097    0.174   0.0
+        SHA2 (miner_core_sha_2)          72.099 2.65e+03 6.85e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_2_DW01_add_15)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_4 (miner_core_sha_2_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_2_DW01_add_13)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_5 (miner_core_sha_2_DW01_add_9)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32 (miner_core_sha_2_DW01_add_8)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_2 (miner_core_sha_2_DW01_add_10)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_8 (miner_core_sha_2_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_2_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_2)          7.266  269.705  779.987  276.972   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_2_DW01_add_71)
+                                          0.000    0.000   21.838 2.18e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_2_DW01_add_67)
+                                          0.000    0.000   18.973 1.90e-05   0.0
+            add_397 (miner_core_comp_2_DW01_add_66)
+                                          0.000    0.000   19.673 1.97e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_2_DW01_add_68)
+                                          0.000    0.000   20.846 2.08e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_2_DW01_add_59)
+                                          0.000    0.000   19.265 1.93e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_2_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_2_DW01_add_54)
+                                          0.000    0.000   18.737 1.87e-05   0.0
+            add_382 (miner_core_comp_2_DW01_add_53)
+                                          0.000    0.000   18.797 1.88e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_2_DW01_add_55)
+                                          0.000    0.000   20.791 2.08e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_2_DW01_add_45)
+                                          0.000    0.000   22.200 2.22e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_2_DW01_add_38)
+                                          0.000    0.000   19.303 1.93e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_2_DW01_add_31)
+                                          0.000    0.000   21.369 2.14e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_2_DW01_add_26)
+                                          0.000    0.000   21.461 2.15e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_2_DW01_add_24)
+                                          0.000    0.000   21.465 2.15e-05   0.0
+          M0 (miner_core_msa_2)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_2_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_2_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_2_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_2_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_2_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_2_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_2_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_2_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_2_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_2_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_2_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_2_DW01_add_277)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_2_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_2_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_2_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_2_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_2_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_2_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_2_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_2_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_2_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_2_DW01_add_272)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_2_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_2_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_2_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_2_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_2_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_2_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_2_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_2_DW01_add_268)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_2_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_2_DW01_add_267)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_2_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_2_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_2_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_2_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_2_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_2_DW01_add_264)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_2_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_2_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_2_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_2_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_2_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_2_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_2_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_2_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_2_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_2_DW01_add_287)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_2_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_2_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_2_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_2_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_2_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_2_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_2_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_2_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_2_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_2_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_2_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_2_DW01_add_254)
+                                          0.000    0.000   21.301 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_2_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_2_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_2_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_2_DW01_add_252)
+                                          0.000    0.000   21.239 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_2_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_2_DW01_add_251)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_2_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_2_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_2_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_2_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_2_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_2_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_2_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_2_DW01_add_247)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_2_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_2_DW01_add_246)
+                                          0.000    0.000   21.283 2.13e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_2_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_2_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_2_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_2_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_2_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_2_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_2_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_2_DW01_add_285)
+                                          0.000    0.000   21.197 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_2_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_2_DW01_add_284)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_2_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_2_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_2_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_2_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_2_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_2_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_2_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_2_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_2_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_2_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_2_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_2_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_2_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_2_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_2_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_2_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_2_DW01_add_232)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_2_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_2_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_2_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_2_DW01_add_228)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_2_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_2_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_2_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_2_DW01_add_224)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_2_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_2_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_2_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_2_DW01_add_220)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_2_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_2_DW01_add_218)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_2_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_2_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_2_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_2_DW01_add_214)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_2_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_2_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_2_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_2_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_2_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_2_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_2_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_2_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_2_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_2_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_2_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_2_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_2_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_2_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_2_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_2_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_2_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_2_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_2_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_2_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_2_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_2_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_2_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_2_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        SHA1 (miner_core_sha_3)          72.079 2.65e+03 6.85e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_3_DW01_add_15)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_4 (miner_core_sha_3_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_3_DW01_add_13)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_5 (miner_core_sha_3_DW01_add_9)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32 (miner_core_sha_3_DW01_add_8)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_2 (miner_core_sha_3_DW01_add_10)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_8 (miner_core_sha_3_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_3_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_3)          7.266  269.804  776.467  277.071   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_3_DW01_add_71)
+                                          0.000    0.000   21.890 2.19e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_3_DW01_add_67)
+                                          0.000    0.000   19.445 1.94e-05   0.0
+            add_397 (miner_core_comp_3_DW01_add_66)
+                                          0.000    0.000   19.063 1.91e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_3_DW01_add_68)
+                                          0.000    0.000   19.894 1.99e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_3_DW01_add_59)
+                                          0.000    0.000   19.439 1.94e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_3_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_3_DW01_add_54)
+                                          0.000    0.000   18.763 1.88e-05   0.0
+            add_382 (miner_core_comp_3_DW01_add_53)
+                                          0.000    0.000   19.006 1.90e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_3_DW01_add_55)
+                                          0.000    0.000   20.956 2.10e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_3_DW01_add_45)
+                                          0.000    0.000   22.366 2.24e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_3_DW01_add_38)
+                                          0.000    0.000   19.277 1.93e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_3_DW01_add_31)
+                                          0.000    0.000   21.272 2.13e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_3_DW01_add_26)
+                                          0.000    0.000   21.367 2.14e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_3_DW01_add_24)
+                                          0.000    0.000   21.535 2.15e-05   0.0
+          M0 (miner_core_msa_3)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_3_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_3_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_3_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_3_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_3_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_3_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_3_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_3_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_3_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_3_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_3_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_3_DW01_add_277)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_3_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_3_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_3_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_3_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_3_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_3_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_3_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_3_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_3_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_3_DW01_add_272)
+                                          0.000    0.000   21.153 2.12e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_3_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_3_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_3_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_3_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_3_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_3_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_3_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_3_DW01_add_268)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_3_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_3_DW01_add_267)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_3_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_3_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_3_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_3_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_3_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_3_DW01_add_264)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_3_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_3_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_3_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_3_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_3_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_3_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_3_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_3_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_3_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_3_DW01_add_287)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_3_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_3_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_3_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_3_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_3_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_3_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_3_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_3_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_3_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_3_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_3_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_3_DW01_add_254)
+                                          0.000    0.000   21.301 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_3_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_3_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_3_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_3_DW01_add_252)
+                                          0.000    0.000   21.239 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_3_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_3_DW01_add_251)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_3_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_3_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_3_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_3_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_3_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_3_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_3_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_3_DW01_add_247)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_3_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_3_DW01_add_246)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_3_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_3_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_3_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_3_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_3_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_3_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_3_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_3_DW01_add_285)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_3_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_3_DW01_add_284)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_3_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_3_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_3_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_3_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_3_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_3_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_3_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_3_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_3_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_3_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_3_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_3_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_3_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_3_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_3_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_3_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_3_DW01_add_232)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_3_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_3_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_3_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_3_DW01_add_228)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_3_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_3_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_3_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_3_DW01_add_224)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_3_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_3_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_3_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_3_DW01_add_220)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_3_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_3_DW01_add_218)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_3_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_3_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_3_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_3_DW01_add_214)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_3_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_3_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_3_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_3_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_3_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_3_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_3_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_3_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_3_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_3_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_3_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_3_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_3_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_3_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_3_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_3_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_3_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_3_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_3_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_3_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_3_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_3_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_3_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_3_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        TIM1 (miner_core_timer_1)         0.000    8.189   10.369    8.189   0.0
+          FC1 (flex_counter_NUM_CNT_BITS7_1)
+                                          0.000    8.189   10.369    8.189   0.0
+            add_46 (flex_counter_NUM_CNT_BITS7_1_DW01_inc_0)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+        CCU1 (miner_core_CCU_1)           0.000    5.118    9.891    5.118   0.0
+      genblk1[0].MCX (miner_core_2)     144.904 5.31e+03 1.39e+04 5.45e+03  30.2
+        lt_30 (miner_core_2_DW_cmp_0)  8.50e-02 9.24e-02   67.324    0.178   0.0
+        SHA2 (miner_core_sha_4)          72.079 2.65e+03 6.85e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_4_DW01_add_15)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_4 (miner_core_sha_4_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_4_DW01_add_13)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_5 (miner_core_sha_4_DW01_add_9)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32 (miner_core_sha_4_DW01_add_8)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_2 (miner_core_sha_4_DW01_add_10)
+                                          0.000    0.000   20.676 2.07e-05   0.0
+          add_32_8 (miner_core_sha_4_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_4_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_4)          7.266  269.804  775.189  277.071   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_4_DW01_add_71)
+                                          0.000    0.000   21.939 2.19e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_4_DW01_add_67)
+                                          0.000    0.000   19.048 1.90e-05   0.0
+            add_397 (miner_core_comp_4_DW01_add_66)
+                                          0.000    0.000   18.916 1.89e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_4_DW01_add_68)
+                                          0.000    0.000   19.999 2.00e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_4_DW01_add_59)
+                                          0.000    0.000   19.327 1.93e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_4_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_4_DW01_add_54)
+                                          0.000    0.000   18.878 1.89e-05   0.0
+            add_382 (miner_core_comp_4_DW01_add_53)
+                                          0.000    0.000   18.748 1.87e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_4_DW01_add_55)
+                                          0.000    0.000   20.852 2.09e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_4_DW01_add_45)
+                                          0.000    0.000   22.439 2.24e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_4_DW01_add_38)
+                                          0.000    0.000   19.444 1.94e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_4_DW01_add_31)
+                                          0.000    0.000   21.552 2.16e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_4_DW01_add_26)
+                                          0.000    0.000   21.367 2.14e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_4_DW01_add_24)
+                                          0.000    0.000   21.434 2.14e-05   0.0
+          M0 (miner_core_msa_4)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_4_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_4_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_4_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_4_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_4_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_4_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_4_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_4_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_4_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_4_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_4_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_4_DW01_add_277)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_4_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_4_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_4_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_4_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_4_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_4_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_4_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_4_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_4_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_4_DW01_add_272)
+                                          0.000    0.000   21.129 2.11e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_4_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_4_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_4_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_4_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_4_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_4_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_4_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_4_DW01_add_268)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_4_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_4_DW01_add_267)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_4_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_4_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_4_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_4_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_4_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_4_DW01_add_264)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_4_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_4_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_4_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_4_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_4_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_4_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_4_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_4_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_4_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_4_DW01_add_287)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_4_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_4_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_4_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_4_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_4_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_4_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_4_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_4_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_4_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_4_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_4_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_4_DW01_add_254)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_4_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_4_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_4_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_4_DW01_add_252)
+                                          0.000    0.000   21.239 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_4_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_4_DW01_add_251)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_4_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_4_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_4_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_4_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_4_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_4_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_4_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_4_DW01_add_247)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_4_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_4_DW01_add_246)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_4_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_4_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_4_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_4_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_4_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_4_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_4_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_4_DW01_add_285)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_4_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_4_DW01_add_284)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_4_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_4_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_4_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_4_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_4_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_4_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_4_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_4_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_4_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_4_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_4_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_4_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_4_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_4_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_4_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_4_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_4_DW01_add_232)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_4_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_4_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_4_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_4_DW01_add_228)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_4_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_4_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_4_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_4_DW01_add_224)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_4_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_4_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_4_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_4_DW01_add_220)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_4_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_4_DW01_add_218)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_4_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_4_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_4_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_4_DW01_add_214)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_4_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_4_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_4_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_4_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_4_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_4_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_4_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_4_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_4_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_4_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_4_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_4_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_4_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_4_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_4_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_4_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_4_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_4_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_4_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_4_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_4_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_4_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_4_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_4_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        SHA1 (miner_core_sha_5)          72.099 2.65e+03 6.86e+03 2.72e+03  15.1
+          add_32_3 (miner_core_sha_5_DW01_add_15)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_4 (miner_core_sha_5_DW01_add_14)
+                                          0.000    0.000   20.645 2.06e-05   0.0
+          add_32_6 (miner_core_sha_5_DW01_add_13)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_5 (miner_core_sha_5_DW01_add_9)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32 (miner_core_sha_5_DW01_add_8)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_2 (miner_core_sha_5_DW01_add_10)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_8 (miner_core_sha_5_DW01_add_12)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          add_32_7 (miner_core_sha_5_DW01_add_11)
+                                          0.000    0.000   20.644 2.06e-05   0.0
+          C0 (miner_core_comp_5)          7.266  269.705  779.902  276.972   1.5
+            add_1_root_add_0_root_add_389_4 (miner_core_comp_5_DW01_add_71)
+                                          0.000    0.000   22.147 2.21e-05   0.0
+            add_0_root_add_0_root_add_393 (miner_core_comp_5_DW01_add_67)
+                                          0.000    0.000   18.925 1.89e-05   0.0
+            add_397 (miner_core_comp_5_DW01_add_66)
+                                          0.000    0.000   19.392 1.94e-05   0.0
+            add_0_root_add_0_root_add_389_4 (miner_core_comp_5_DW01_add_68)
+                                          0.000    0.000   21.101 2.11e-05   0.0
+            add_2_root_add_0_root_add_374_4 (miner_core_comp_5_DW01_add_59)
+                                          0.000    0.000   19.300 1.93e-05   0.0
+            add_3_root_add_0_root_add_374_4 (miner_core_comp_5_DW01_add_60)
+                                          0.000    0.000   10.667 1.07e-05   0.0
+            add_0_root_add_0_root_add_378 (miner_core_comp_5_DW01_add_54)
+                                          0.000    0.000   18.981 1.90e-05   0.0
+            add_382 (miner_core_comp_5_DW01_add_53)
+                                          0.000    0.000   18.880 1.89e-05   0.0
+            add_3_root_add_0_root_add_389_4 (miner_core_comp_5_DW01_add_55)
+                                          0.000    0.000   20.737 2.07e-05   0.0
+            add_2_root_add_0_root_add_389_4 (miner_core_comp_5_DW01_add_45)
+                                          0.000    0.000   22.265 2.23e-05   0.0
+            add_0_root_add_0_root_add_374_4 (miner_core_comp_5_DW01_add_38)
+                                          0.000    0.000   19.277 1.93e-05   0.0
+            add_1_root_add_0_root_add_374_4 (miner_core_comp_5_DW01_add_31)
+                                          0.000    0.000   21.508 2.15e-05   0.0
+            add_1_root_add_0_root_add_393 (miner_core_comp_5_DW01_add_26)
+                                          0.000    0.000   21.430 2.14e-05   0.0
+            add_1_root_add_0_root_add_378 (miner_core_comp_5_DW01_add_24)
+                                          0.000    0.000   21.398 2.14e-05   0.0
+          M0 (miner_core_msa_5)          57.779 2.11e+03 5.73e+03 2.17e+03  12.0
+            add_0_root_add_0_root_add_522_3 (miner_core_msa_5_DW01_add_238)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_522_3 (miner_core_msa_5_DW01_add_282)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_512_3 (miner_core_msa_5_DW01_add_212)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_512_3 (miner_core_msa_5_DW01_add_281)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_502_3 (miner_core_msa_5_DW01_add_211)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_502_3 (miner_core_msa_5_DW01_add_280)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_492_3 (miner_core_msa_5_DW01_add_210)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_492_3 (miner_core_msa_5_DW01_add_279)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_442_3 (miner_core_msa_5_DW01_add_209)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_442_3 (miner_core_msa_5_DW01_add_278)
+                                          0.000    0.000   21.190 2.12e-05   0.0
+            add_0_root_add_0_root_add_432_3 (miner_core_msa_5_DW01_add_208)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_432_3 (miner_core_msa_5_DW01_add_277)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_422_3 (miner_core_msa_5_DW01_add_207)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_422_3 (miner_core_msa_5_DW01_add_276)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_412_3 (miner_core_msa_5_DW01_add_206)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_412_3 (miner_core_msa_5_DW01_add_275)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_362_3 (miner_core_msa_5_DW01_add_165)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_362_3 (miner_core_msa_5_DW01_add_274)
+                                          0.000    0.000   21.331 2.13e-05   0.0
+            add_0_root_add_0_root_add_352_3 (miner_core_msa_5_DW01_add_164)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_352_3 (miner_core_msa_5_DW01_add_273)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_342_3 (miner_core_msa_5_DW01_add_163)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_342_3 (miner_core_msa_5_DW01_add_272)
+                                          0.000    0.000   21.153 2.12e-05   0.0
+            add_0_root_add_0_root_add_332_3 (miner_core_msa_5_DW01_add_162)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_332_3 (miner_core_msa_5_DW01_add_271)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_282_3 (miner_core_msa_5_DW01_add_161)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_282_3 (miner_core_msa_5_DW01_add_270)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_272_3 (miner_core_msa_5_DW01_add_160)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_272_3 (miner_core_msa_5_DW01_add_269)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_262_3 (miner_core_msa_5_DW01_add_159)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_262_3 (miner_core_msa_5_DW01_add_268)
+                                          0.000    0.000   21.282 2.13e-05   0.0
+            add_0_root_add_0_root_add_252_3 (miner_core_msa_5_DW01_add_158)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_252_3 (miner_core_msa_5_DW01_add_267)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_0_root_add_0_root_add_202_3 (miner_core_msa_5_DW01_add_157)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_202_3 (miner_core_msa_5_DW01_add_266)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_192_3 (miner_core_msa_5_DW01_add_156)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_192_3 (miner_core_msa_5_DW01_add_265)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_182_3 (miner_core_msa_5_DW01_add_155)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_182_3 (miner_core_msa_5_DW01_add_264)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_172_3 (miner_core_msa_5_DW01_add_205)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_172_3 (miner_core_msa_5_DW01_add_263)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_122_3 (miner_core_msa_5_DW01_add_204)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_122_3 (miner_core_msa_5_DW01_add_262)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_112_3 (miner_core_msa_5_DW01_add_203)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_112_3 (miner_core_msa_5_DW01_add_261)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_102_3 (miner_core_msa_5_DW01_add_202)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_102_3 (miner_core_msa_5_DW01_add_260)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_92_3 (miner_core_msa_5_DW01_add_201)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_92_3 (miner_core_msa_5_DW01_add_287)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_482_3 (miner_core_msa_5_DW01_add_200)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_482_3 (miner_core_msa_5_DW01_add_259)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_472_3 (miner_core_msa_5_DW01_add_199)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_472_3 (miner_core_msa_5_DW01_add_258)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_462_3 (miner_core_msa_5_DW01_add_198)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_462_3 (miner_core_msa_5_DW01_add_257)
+                                          0.000    0.000   21.246 2.12e-05   0.0
+            add_0_root_add_0_root_add_452_3 (miner_core_msa_5_DW01_add_197)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_452_3 (miner_core_msa_5_DW01_add_256)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_322_3 (miner_core_msa_5_DW01_add_154)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_322_3 (miner_core_msa_5_DW01_add_255)
+                                          0.000    0.000   21.245 2.12e-05   0.0
+            add_0_root_add_0_root_add_312_3 (miner_core_msa_5_DW01_add_153)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_312_3 (miner_core_msa_5_DW01_add_254)
+                                          0.000    0.000   21.301 2.13e-05   0.0
+            add_0_root_add_0_root_add_302_3 (miner_core_msa_5_DW01_add_152)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_302_3 (miner_core_msa_5_DW01_add_253)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_292_3 (miner_core_msa_5_DW01_add_151)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_292_3 (miner_core_msa_5_DW01_add_252)
+                                          0.000    0.000   21.239 2.12e-05   0.0
+            add_0_root_add_0_root_add_162_3 (miner_core_msa_5_DW01_add_196)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_162_3 (miner_core_msa_5_DW01_add_251)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_152_3 (miner_core_msa_5_DW01_add_195)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_152_3 (miner_core_msa_5_DW01_add_250)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_142_3 (miner_core_msa_5_DW01_add_194)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_142_3 (miner_core_msa_5_DW01_add_249)
+                                          0.000    0.000   21.214 2.12e-05   0.0
+            add_0_root_add_0_root_add_132_3 (miner_core_msa_5_DW01_add_193)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_132_3 (miner_core_msa_5_DW01_add_248)
+                                          0.000    0.000   21.337 2.13e-05   0.0
+            add_0_root_add_0_root_add_402_3 (miner_core_msa_5_DW01_add_192)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_402_3 (miner_core_msa_5_DW01_add_247)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_392_3 (miner_core_msa_5_DW01_add_150)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_392_3 (miner_core_msa_5_DW01_add_246)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_382_3 (miner_core_msa_5_DW01_add_149)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_382_3 (miner_core_msa_5_DW01_add_245)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_372_3 (miner_core_msa_5_DW01_add_148)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_372_3 (miner_core_msa_5_DW01_add_244)
+                                          0.000    0.000   21.306 2.13e-05   0.0
+            add_0_root_add_0_root_add_82_3 (miner_core_msa_5_DW01_add_191)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_82_3 (miner_core_msa_5_DW01_add_286)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_72_3 (miner_core_msa_5_DW01_add_190)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_72_3 (miner_core_msa_5_DW01_add_285)
+                                          0.000    0.000   21.227 2.12e-05   0.0
+            add_0_root_add_0_root_add_62_3 (miner_core_msa_5_DW01_add_189)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_62_3 (miner_core_msa_5_DW01_add_284)
+                                          0.000    0.000   21.313 2.13e-05   0.0
+            add_0_root_add_0_root_add_52_3 (miner_core_msa_5_DW01_add_188)
+                                          0.000    0.000   21.421 2.14e-05   0.0
+            add_2_root_add_0_root_add_52_3 (miner_core_msa_5_DW01_add_283)
+                                          0.000    0.000   21.289 2.13e-05   0.0
+            add_0_root_add_0_root_add_242_3 (miner_core_msa_5_DW01_add_147)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_242_3 (miner_core_msa_5_DW01_add_243)
+                                          0.000    0.000   21.300 2.13e-05   0.0
+            add_0_root_add_0_root_add_232_3 (miner_core_msa_5_DW01_add_146)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_232_3 (miner_core_msa_5_DW01_add_242)
+                                          0.000    0.000   21.221 2.12e-05   0.0
+            add_0_root_add_0_root_add_222_3 (miner_core_msa_5_DW01_add_145)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_222_3 (miner_core_msa_5_DW01_add_241)
+                                          0.000    0.000   21.276 2.13e-05   0.0
+            add_0_root_add_0_root_add_212_3 (miner_core_msa_5_DW01_add_144)
+                                          0.000    0.000   21.422 2.14e-05   0.0
+            add_2_root_add_0_root_add_212_3 (miner_core_msa_5_DW01_add_240)
+                                          0.000    0.000   21.252 2.13e-05   0.0
+            add_1_root_add_0_root_add_522_3 (miner_core_msa_5_DW01_add_239)
+                                          0.000    0.000   21.397 2.14e-05   0.0
+            add_1_root_add_0_root_add_512_3 (miner_core_msa_5_DW01_add_237)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_502_3 (miner_core_msa_5_DW01_add_236)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_492_3 (miner_core_msa_5_DW01_add_235)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_442_3 (miner_core_msa_5_DW01_add_234)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_432_3 (miner_core_msa_5_DW01_add_233)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_422_3 (miner_core_msa_5_DW01_add_232)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_412_3 (miner_core_msa_5_DW01_add_231)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_172_3 (miner_core_msa_5_DW01_add_230)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_122_3 (miner_core_msa_5_DW01_add_229)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_112_3 (miner_core_msa_5_DW01_add_228)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_102_3 (miner_core_msa_5_DW01_add_227)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_92_3 (miner_core_msa_5_DW01_add_226)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_482_3 (miner_core_msa_5_DW01_add_225)
+                                          0.000    0.000   21.281 2.13e-05   0.0
+            add_1_root_add_0_root_add_472_3 (miner_core_msa_5_DW01_add_224)
+                                          0.000    0.000   21.311 2.13e-05   0.0
+            add_1_root_add_0_root_add_462_3 (miner_core_msa_5_DW01_add_223)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_452_3 (miner_core_msa_5_DW01_add_222)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_162_3 (miner_core_msa_5_DW01_add_221)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_152_3 (miner_core_msa_5_DW01_add_220)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_142_3 (miner_core_msa_5_DW01_add_219)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_132_3 (miner_core_msa_5_DW01_add_218)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_402_3 (miner_core_msa_5_DW01_add_217)
+                                          0.000    0.000   21.342 2.13e-05   0.0
+            add_1_root_add_0_root_add_82_3 (miner_core_msa_5_DW01_add_216)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_72_3 (miner_core_msa_5_DW01_add_215)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_62_3 (miner_core_msa_5_DW01_add_214)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_52_3 (miner_core_msa_5_DW01_add_213)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_362_3 (miner_core_msa_5_DW01_add_187)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_352_3 (miner_core_msa_5_DW01_add_186)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_342_3 (miner_core_msa_5_DW01_add_185)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_332_3 (miner_core_msa_5_DW01_add_184)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_282_3 (miner_core_msa_5_DW01_add_183)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_272_3 (miner_core_msa_5_DW01_add_182)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_262_3 (miner_core_msa_5_DW01_add_181)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_252_3 (miner_core_msa_5_DW01_add_180)
+                                          0.000    0.000   21.373 2.14e-05   0.0
+            add_1_root_add_0_root_add_202_3 (miner_core_msa_5_DW01_add_179)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_192_3 (miner_core_msa_5_DW01_add_178)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_182_3 (miner_core_msa_5_DW01_add_177)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_322_3 (miner_core_msa_5_DW01_add_176)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_312_3 (miner_core_msa_5_DW01_add_175)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_302_3 (miner_core_msa_5_DW01_add_174)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_292_3 (miner_core_msa_5_DW01_add_173)
+                                          0.000    0.000   21.372 2.14e-05   0.0
+            add_1_root_add_0_root_add_382_3 (miner_core_msa_5_DW01_add_171)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_372_3 (miner_core_msa_5_DW01_add_170)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_242_3 (miner_core_msa_5_DW01_add_169)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_232_3 (miner_core_msa_5_DW01_add_168)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_222_3 (miner_core_msa_5_DW01_add_167)
+                                          0.000    0.000   21.403 2.14e-05   0.0
+            add_1_root_add_0_root_add_212_3 (miner_core_msa_5_DW01_add_166)
+                                          0.000    0.000   21.322 2.13e-05   0.0
+            add_1_root_add_0_root_add_392_3 (miner_core_msa_5_DW01_add_172)
+                                          0.000    0.000   21.390 2.14e-05   0.0
+            r963 (miner_core_msa_5_DW01_inc_0)
+                                       6.13e-04 1.35e-03    1.541 1.96e-03   0.0
+        TIM1 (miner_core_timer_2)         0.000    8.189   10.369    8.189   0.0
+          FC1 (flex_counter_NUM_CNT_BITS7_2)
+                                          0.000    8.189   10.369    8.189   0.0
+            add_46 (flex_counter_NUM_CNT_BITS7_2_DW01_inc_0)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+        CCU1 (miner_core_CCU_2)           0.000    5.118    9.698    5.118   0.0
+    MCU0 (miner_MCU)                      0.000    3.071    3.140    3.071   0.0
+    MC0 (miner_counter)                2.64e-02   33.978   48.688   34.004   0.2
+      MNC1 (miner_NonceCounter_CORES1_NUM_CNT_BITS32)
+                                       2.64e-02   33.978   48.688   34.004   0.2
+        add_47 (miner_NonceCounter_CORES1_NUM_CNT_BITS32_DW01_inc_1)
+                                       3.32e-03 1.09e-02   10.737 1.42e-02   0.0
+  RX (uartrx)                            25.679  939.171  650.000  964.851   5.3
+    I10 (flex_counter_NUM_CNT_BITS7_3)    0.000    8.189   10.227    8.189   0.0
+      add_46 (flex_counter_NUM_CNT_BITS7_3_DW01_inc_0)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+    I6 (uartrx_buffer)                   22.674  900.201  616.077  922.875   5.1
+    I5 (uartrx_stop_bit_chk)           2.53e-03    1.028    0.737    1.030   0.0
+    I4 (uartrx_sr_9bit)                   0.698    9.769    6.507   10.467   0.1
+      I0 (flex_stp_sr_NUM_BITS9_SHIFT_MSB0)
+                                          0.698    9.769    6.507   10.467   0.1
+    I3 (uartrx_timer)                     2.016   13.051   11.400   15.067   0.1
+      I8 (flex_counter_0)                 0.136    5.271    5.685    5.406   0.0
+      I7 (flex_counter_1)                 1.591    7.732    5.654    9.323   0.1
+    I2 (uartrx_rcu)                       0.209    3.348    3.370    3.557   0.0
+    I1 (uartrx_start_bit_det)          7.92e-02    3.587    1.681    3.666   0.0
+  TX (uart_tx)                            9.212  391.296  310.624  400.508   2.2
+    FC3 (flex_counter_NUM_CNT_BITS4)      0.000    5.118    5.716    5.118   0.0
+    FC2 (flex_counter_NUM_CNT_BITS9)      0.000   10.236   13.035   10.236   0.1
+      add_46 (flex_counter_NUM_CNT_BITS9_DW01_inc_0)
+                                          0.000    0.000    2.073 2.07e-06   0.0
+    FPS (flex_pts_sr_NUM_BITS360_SHIFT_MSB1)
+                                          9.212  374.918  291.151  384.130   2.1
+    UTT (uart_tx_TCU)                     0.000    1.024    0.722    1.024   0.0
+1

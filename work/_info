@@ -4,51 +4,856 @@ K3
 cModel Technology
 Z0 d/home/ecegrid/a/mg108/ece337/Lab1
 T_opt
-VdJ^`DAEIkJ<Qmg_Ykb1f61
-04 10 4 work comparator fast 0
-=3-000000000000-54b80566-5e47d-25f
-o-quiet -auto_acc_if_foreign -work work
-n@_opt
-OL;O;10.1b;51
-vcomparator
-Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-ISL6X[PzB`PHR=VIWXG`YH3
-V33^>E]EI4>0ROmaHolP>A3
+Z1 VdJ^`DAEIkJ<Qmg_Ykb1f61
+Z2 04 10 4 work comparator fast 0
+Z3 =3-000000000000-54b80566-5e47d-25f
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;10.1b;51
+Z7 d/home/ecegrid/a/mg108/ece337/Lab1
+vbitcoinminer
+Z8 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z9 IgiLbAY2GAVb<PI0`Uazl81
+Z10 VcI1GU?h1Jfe]b@U:QX5eL0
+Z11 !s105 bitcoinminer_sv_unit
 S1
-Z2 d/home/ecegrid/a/mg108/ece337/Lab1
-w1421346006
-Z3 8source/comparator.sv
-Z4 Fsource/comparator.sv
-L0 11
-Z5 OL;L;10.1b;51
+Z12 d/home/ecegrid/a/mg108/ece337/Project/ECE337Project
+Z13 w1430768490
+Z14 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/bitcoinminer.sv
+Z15 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/bitcoinminer.sv
+L0 8
+Z16 OL;L;10.1b;51
 r1
 31
-Z6 !s90 -reportprogress|300|source/comparator.sv|
-Z7 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
-Z8 !s107 source/comparator.sv|
-!s105 comparator_sv_unit
+Z17 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/bitcoinminer.sv|
+Z18 o-work work
+Z19 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverFEC 0 CoverShortCircuit 0
 !i10b 1
-!s100 mOIh[cGhP<^1a[RA0FQ2C0
+Z20 !s100 g:NY^1B[Le1=BOhg_4=W93
 !s85 0
-!s108 1421346009.151333
-Xcomparator_sv_unit
-R1
-Ii_aAVHCmTbF`nN0hXc;^]1
-Vi_aAVHCmTbF`nN0hXc;^]1
+Z21 !s108 1430769167.553201
+Z22 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/bitcoinminer.sv|
+vcomparator
+R8
+Z23 ISL6X[PzB`PHR=VIWXG`YH3
+Z24 V33^>E]EI4>0ROmaHolP>A3
 S1
-R2
-w1421343330
-R3
-R4
-L0 44
-R5
+R7
+Z25 w1421346006
+Z26 8source/comparator.sv
+Z27 Fsource/comparator.sv
+L0 11
+R16
 r1
 31
+Z28 !s90 -reportprogress|300|source/comparator.sv|
+R19
+Z29 !s107 source/comparator.sv|
+Z30 !s105 comparator_sv_unit
+Z31 !s100 mOIh[cGhP<^1a[RA0FQ2C0
+Z32 !s108 1421346009.151333
+!i10b 1
+!s85 0
+Xcomparator_sv_unit
 R8
-R6
+Z33 Ii_aAVHCmTbF`nN0hXc;^]1
+Z34 Vi_aAVHCmTbF`nN0hXc;^]1
+S1
 R7
-!s108 1421343333.917457
-!s100 O^Z@<96aAAe`8>26<ZR2`1
+Z35 w1421343330
+R26
+R27
+L0 44
+R16
+r1
+31
+R29
+R28
+R19
+Z36 !s108 1421343333.917457
+Z37 !s100 O^Z@<96aAAe`8>26<ZR2`1
 !i10b 1
 !i103 1
+!s85 0
+vminer
+R8
+Z38 !s100 ]b9k4?`Wnge1@N]bBZ@RK3
+Z39 IGh@3@_TEjWTU;2D]QTQh?0
+Z40 VWEL_cFUeS23D=Pnb`jmao0
+Z41 !s105 miner_sv_unit
+S1
+R12
+Z42 w1430762794
+Z43 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner.sv
+Z44 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner.sv
+L0 9
+R16
+r1
+31
+Z45 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner.sv|
+R18
+R19
+Z46 !s108 1430763777.812906
+Z47 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner.sv|
+!i10b 1
+!s85 0
+vminer_core
+R8
+Z48 IQ2NCSo]KjA`0ITiDe[GB33
+Z49 VnW^7YeblLh2OE[HM=;QY]0
+S1
+R12
+Z50 w1430269484
+Z51 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core.sv
+Z52 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core.sv
+L0 8
+R16
+r1
+31
+R18
+R19
+Z53 !s100 E=Jh9:10@SVS<8R]jOIF21
+Z54 !s105 miner_core_sv_unit
+Z55 !s108 1430269487.197117
+Z56 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core.sv|
+Z57 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core.sv|
+!i10b 1
+!s85 0
+vminer_core_CCU
+R8
+Z58 IlQa5GId9Ij`F=z1g0O_nK0
+Z59 V0JH?>VA5`lJK6ROi]1:a92
+S1
+R12
+Z60 w1430352325
+Z61 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_CCU.sv
+Z62 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_CCU.sv
+L0 5
+R16
+r1
+31
+R18
+R19
+Z63 nminer_core_@c@c@u
+Z64 !s100 M:z6BNne6L8_aTZ^DlHhi2
+Z65 !s105 miner_core_CCU_sv_unit
+Z66 !s108 1430352335.051674
+Z67 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_CCU.sv|
+Z68 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_CCU.sv|
+!i10b 1
+!s85 0
+vminer_core_comp
+R8
+Z69 Iz[fW_LgMk^Q6f:LWfZH_43
+Z70 VB7SYUa=R>?@eRD19M4:mm2
+Z71 !s105 miner_core_comp_sv_unit
+S1
+R12
+Z72 w1430353836
+Z73 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_comp.sv
+Z74 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_comp.sv
+L0 8
+R16
+r1
+31
+Z75 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_comp.sv|
+R18
+R19
+Z76 !s100 jDF1HDH_BiR<1TYmZ^i^T1
+Z77 !s108 1430353904.034542
+Z78 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_comp.sv|
+!i10b 1
+!s85 0
+vminer_core_index
+R8
+Z79 IQDE9`1An3Jk:NUJE`Na]E0
+Z80 VDg@9R45z?0>`R[5YnnI7b1
+Z81 !s105 miner_core_msa_sv_unit
+S1
+R12
+Z82 w1429306608
+Z83 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msa.sv
+Z84 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msa.sv
+L0 47
+R16
+r1
+31
+Z85 !s108 1429306610.275918
+Z86 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msa.sv|
+Z87 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msa.sv|
+R18
+R19
+Z88 !s100 `<5[?Z9_PkTTe^?IPKc?72
+!i10b 1
+!s85 0
+vminer_core_msa
+R8
+Z89 I@dn3jfNcl<Z]5<_6AYo`g3
+Z90 V9[<Y`56BTQdoW]A=MWTbS3
+R81
+S1
+R12
+Z91 w1430256027
+R83
+R84
+L0 8
+R16
+r1
+31
+R87
+R18
+R19
+Z92 !s100 26VNCTdJ;H`=U6fGN4HHd1
+Z93 !s108 1430256035.724419
+R86
+!i10b 1
+!s85 0
+vminer_core_msaindex
+R8
+Z94 I<2[>5VHMD8fN1l8_hElHC1
+Z95 V;TR6K?B4g7R8HXeM`hZFO0
+Z96 !s105 miner_core_msaindex_sv_unit
+S1
+R12
+Z97 w1429316103
+Z98 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msaindex.sv
+Z99 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msaindex.sv
+L0 8
+R16
+r1
+31
+Z100 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msaindex.sv|
+R18
+R19
+Z101 !s100 MfAA0<VGJaXz4@]<]]4j<2
+Z102 !s108 1429316114.775432
+Z103 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_msaindex.sv|
+!i10b 1
+!s85 0
+vminer_core_sha
+R8
+Z104 !s100 94[7eE9n1jBTOlPl4MH8o0
+Z105 Ih;kNYcL7XE`4QBJm?>78A2
+Z106 VY3_KmcGbdoNS?n7V5X;Fo1
+Z107 !s105 miner_core_sha_sv_unit
+S1
+R12
+Z108 w1430101223
+Z109 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_sha.sv
+Z110 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_sha.sv
+L0 8
+R16
+r1
+31
+Z111 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_sha.sv|
+R18
+R19
+Z112 !s108 1430101907.785971
+Z113 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_sha.sv|
+!i10b 1
+!s85 0
+vminer_core_test
+R8
+Z114 IPTKbZ3XIhnhDZjR5?mFzI3
+Z115 VA[dVlF8>jnnZ9_I?l8_RL0
+S1
+R12
+Z116 w1429751923
+Z117 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_test.sv
+Z118 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_test.sv
+L0 8
+R16
+r1
+31
+R18
+R19
+Z119 !s100 UT;lAZCD[aFYCd1R4DONA1
+Z120 !s105 miner_core_test_sv_unit
+Z121 !s108 1429752245.611741
+Z122 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_test.sv|
+Z123 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_core_test.sv|
+!i10b 1
+!s85 0
+vminer_counter
+R8
+Z124 IlBZR6B05AdWXh3iCZ0Gk00
+Z125 VlKlBRa0jlP7I<Bz7lhZjZ2
+Z126 !s105 miner_counter_sv_unit
+S1
+R12
+Z127 w1430763770
+Z128 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_counter.sv
+Z129 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_counter.sv
+L0 8
+R16
+r1
+31
+Z130 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_counter.sv|
+R18
+R19
+Z131 !s100 DYbliBh:ge17in8LS358Z0
+Z132 !s108 1430763776.667014
+Z133 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_counter.sv|
+!i10b 1
+!s85 0
+vminer_MCU
+R8
+Z134 !s100 ZnLV3J8<32:3ETHNVBIIE1
+Z135 Id<LOQZXBBLfiBgCjU6z_Z3
+Z136 VQR2MX8kHW<6e1f_23ki:c1
+Z137 !s105 miner_MCU_sv_unit
+S1
+R12
+Z138 w1430763330
+Z139 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_MCU.sv
+Z140 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_MCU.sv
+L0 8
+R16
+r1
+31
+Z141 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_MCU.sv|
+R18
+R19
+Z142 nminer_@m@c@u
+Z143 !s108 1430763855.602628
+Z144 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_MCU.sv|
+!i10b 1
+!s85 0
+vminer_NonceCounter
+R8
+Z145 !s100 naH9;g;eToe[g>a2UKPBJ0
+Z146 I9oWWc2?EP^Q2^cQ@MS0<C2
+Z147 VJDlV?cLijlROJ21UQlo443
+Z148 !s105 miner_NonceCounter_sv_unit
+S1
+R12
+Z149 w1430259568
+Z150 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_NonceCounter.sv
+Z151 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_NonceCounter.sv
+L0 8
+R16
+r1
+31
+Z152 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_NonceCounter.sv|
+R18
+R19
+Z153 nminer_@nonce@counter
+Z154 !s108 1430259865.058454
+Z155 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/miner_NonceCounter.sv|
+!i10b 1
+!s85 0
+vtb_bitcoinminer
+R8
+Z156 DXx4 work 23 tb_bitcoinminer_sv_unit 0 22 Y`DgX59GkB[?oOd<Y^8EM0
+Z157 Vm[bIU4_S;m3XKM1c24PXA0
+r1
+!s85 0
+31
+!i10b 1
+!s100 M6h5JnmeFZXB`SS4?JH1f2
+IAB8eZQFgKLjRa72LdNGzL1
+Z158 !s105 tb_bitcoinminer_sv_unit
+S1
+R12
+Z159 w1430761557
+Z160 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_bitcoinminer.sv
+Z161 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_bitcoinminer.sv
+L0 10
+R16
+Z162 !s108 1430769379.681467
+Z163 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_bitcoinminer.sv|
+Z164 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_bitcoinminer.sv|
+R18
+R19
+Xtb_bitcoinminer_sv_unit
+R8
+Z165 VY`DgX59GkB[?oOd<Y^8EM0
+r1
+!s85 0
+31
+!i10b 1
+Z166 !s100 ^`FCea5@Yc1O;1lRG1cbf1
+Z167 IY`DgX59GkB[?oOd<Y^8EM0
+!i103 1
+S1
+R12
+R159
+R160
+R161
+L0 9
+R16
+R162
+R163
+R164
+R18
+R19
+vtb_miner
+R8
+R156
+Z168 V:gmM=6@lglCNz1L8cDF3Q3
+r1
+31
+Z169 !s100 :EAImKkmU0F^P2k2c`Yd11
+Z170 IOmPHGP^9`W`;Nh5BE_82[0
+R158
+S1
+R12
+Z171 w1430761139
+R160
+R161
+L0 10
+R16
+Z172 !s108 1430761152.055121
+Z173 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_bitcoinminer.sv|
+R164
+R18
+R19
+!s85 0
+!i10b 1
+vtb_miner_core_comp
+R8
+Z174 DXx4 work 26 tb_miner_core_comp_sv_unit 0 22 XenI<@BRhH2XL;kHBLnlE0
+Z175 Vabj1eZo@zhiMVlAgma;A?1
+r1
+31
+Z176 I9zf_TocgSH1O4[PLdXM]S2
+Z177 !s105 tb_miner_core_comp_sv_unit
+S1
+R12
+Z178 w1429740236
+Z179 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_comp.sv
+Z180 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_comp.sv
+L0 10
+R16
+Z181 !s108 1429740238.792168
+Z182 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_comp.sv|
+Z183 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_comp.sv|
+R18
+R19
+Z184 !s100 VS:5XVk55kOV5i@J2TN7h2
+!s85 0
+!i10b 1
+Xtb_miner_core_comp_sv_unit
+R8
+Z185 VXenI<@BRhH2XL;kHBLnlE0
+r1
+31
+Z186 IXenI<@BRhH2XL;kHBLnlE0
+S1
+R12
+R178
+R179
+R180
+L0 9
+R16
+R181
+R182
+R183
+R18
+R19
+Z187 !s100 V^[7Ao4dJ@>4Q;]OTZ]]a1
+!s85 0
+!i10b 1
+!i103 1
+vtb_miner_core_msa
+R8
+Z188 DXx4 work 25 tb_miner_core_msa_sv_unit 0 22 VXQZjm_64DDEMXOG9jgN@3
+Z189 V67SjW4@eZOkih3jQzQ3J`2
+r1
+31
+Z190 IWKll6QI`0hER<oE``oMVe3
+Z191 !s105 tb_miner_core_msa_sv_unit
+S1
+R12
+Z192 w1429726753
+Z193 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msa.sv
+Z194 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msa.sv
+L0 10
+R16
+Z195 !s108 1429726758.232963
+Z196 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msa.sv|
+Z197 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msa.sv|
+R18
+R19
+Z198 !s100 e>;KA]mU_9d;Q0z0OKCh11
+!s85 0
+!i10b 1
+Xtb_miner_core_msa_sv_unit
+R8
+Z199 VVXQZjm_64DDEMXOG9jgN@3
+r1
+31
+Z200 IVXQZjm_64DDEMXOG9jgN@3
+S1
+R12
+R192
+R193
+R194
+L0 9
+R16
+R195
+R196
+R197
+R18
+R19
+Z201 !s100 o<:YiWIBd]KGolGB4W@4l2
+!s85 0
+!i10b 1
+!i103 1
+vtb_miner_core_msaindex
+R8
+Z202 DXx4 work 30 tb_miner_core_msaindex_sv_unit 0 22 :mgk:E;]c?[QGY;<jd2c82
+Z203 VN5WolC@7MVzZ?;HM?3fjV0
+r1
+31
+Z204 I6S?PZKQM7<J>7HklOLGiU0
+Z205 !s105 tb_miner_core_msaindex_sv_unit
+S1
+R12
+Z206 w1429316340
+Z207 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msaindex.sv
+Z208 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msaindex.sv
+L0 10
+R16
+Z209 !s108 1429316347.446046
+Z210 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msaindex.sv|
+Z211 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_msaindex.sv|
+R18
+R19
+Z212 !s100 J0a]jNC8DQPPW8Y51[7Dg3
+!s85 0
+!i10b 1
+Xtb_miner_core_msaindex_sv_unit
+R8
+Z213 V:mgk:E;]c?[QGY;<jd2c82
+r1
+31
+Z214 I:mgk:E;]c?[QGY;<jd2c82
+S1
+R12
+R206
+R207
+R208
+L0 9
+R16
+R209
+R210
+R211
+R18
+R19
+Z215 !s100 OHZiGCA]g;zIe_T?Kk0U]1
+!s85 0
+!i10b 1
+!i103 1
+vtb_miner_core_sha
+R8
+Z216 DXx4 work 25 tb_miner_core_sha_sv_unit 0 22 X`81ZJ8bRP5o9J]WjmT^O3
+Z217 VDGhz9IGaO^FPV0z1LLBFh1
+r1
+31
+Z218 IDJJac?WW0enK5PJ?B5[RH2
+Z219 !s105 tb_miner_core_sha_sv_unit
+S1
+R12
+Z220 w1430101976
+Z221 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sha.sv
+Z222 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sha.sv
+L0 10
+R16
+Z223 !s108 1430101979.176862
+Z224 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sha.sv|
+Z225 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sha.sv|
+R18
+R19
+Z226 !s100 0JMI9h7=921LE1`X?Ubn80
+!s85 0
+!i10b 1
+Xtb_miner_core_sha_sv_unit
+R8
+Z227 VX`81ZJ8bRP5o9J]WjmT^O3
+r1
+31
+Z228 IX`81ZJ8bRP5o9J]WjmT^O3
+S1
+R12
+R220
+R221
+R222
+L0 9
+R16
+R223
+R224
+R225
+R18
+R19
+Z229 !s100 a8fznRcCUm3z[@YTUk7U_3
+!s85 0
+!i10b 1
+!i103 1
+vtb_miner_core_sma
+R8
+Z230 DXx4 work 25 tb_miner_core_sma_sv_unit 0 22 ;7mOiA3mEgbeT::CYOL180
+Z231 VI9em6Y4aY7DO_1;4DV8610
+r1
+31
+Z232 I0O_S0zjKG;RJ^`zEm_GjB0
+Z233 !s105 tb_miner_core_sma_sv_unit
+S1
+R12
+Z234 w1429234378
+Z235 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sma.sv
+Z236 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sma.sv
+L0 10
+R16
+Z237 !s108 1429234382.056656
+Z238 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sma.sv|
+Z239 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_sma.sv|
+R18
+R19
+Z240 !s100 T=R7B@T?^lT^hKz<`iU@53
+!s85 0
+!i10b 1
+Xtb_miner_core_sma_sv_unit
+R8
+Z241 V;7mOiA3mEgbeT::CYOL180
+r1
+31
+Z242 !s100 O[jb@UCl@WIDRME2=VW6I2
+Z243 I;7mOiA3mEgbeT::CYOL180
+S1
+R12
+R234
+R235
+R236
+L0 9
+R16
+R237
+R238
+R239
+R18
+R19
+!s85 0
+!i10b 1
+!i103 1
+vtb_miner_core_test
+R8
+Z244 IA3RM^BV<X=L>R;`RLa1TQ2
+Z245 VKzMcboVh_??zaTB`U^J_c1
+S1
+R12
+Z246 w1429752240
+Z247 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_test.sv
+Z248 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_test.sv
+L0 8
+R16
+r1
+31
+R18
+R19
+Z249 !s100 R0E5mW?T=U61;<0A0;GIQ3
+Z250 !s105 tb_miner_core_test_sv_unit
+Z251 !s108 1429752242.277136
+Z252 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_test.sv|
+Z253 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner_core_test.sv|
+!i10b 1
+!s85 0
+Xtb_miner_sv_unit
+R8
+Z254 VX[n7WTLEzf3d@NKNFZ1Qn2
+r1
+31
+Z255 IX[n7WTLEzf3d@NKNFZ1Qn2
+S1
+R12
+Z256 w1430692088
+Z257 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner.sv
+Z258 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner.sv
+L0 9
+R16
+Z259 !s108 1430692091.042667
+Z260 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner.sv|
+Z261 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_miner.sv|
+R18
+R19
+Z262 !s100 4>CGa7UJ<GA<4XM@J_Ll72
+!s85 0
+!i10b 1
+!i103 1
+vtb_uart_tx
+R8
+Z263 DXx4 work 18 tb_uart_tx_sv_unit 0 22 <XEi1GFRdeT4g@WC<Yi941
+Z264 VD]fNG@l2YCnISb53_MB<:1
+r1
+31
+Z265 IZ_1[UH`[M=nTLjkAWo1j^1
+Z266 !s105 tb_uart_tx_sv_unit
+S1
+R12
+Z267 w1430609576
+Z268 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_uart_tx.sv
+Z269 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_uart_tx.sv
+L0 10
+R16
+Z270 !s108 1430610018.106998
+Z271 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_uart_tx.sv|
+Z272 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/tb_uart_tx.sv|
+R18
+R19
+Z273 !s100 `DaYTen:L9f>H]dRRkaSY0
+!s85 0
+!i10b 1
+Xtb_uart_tx_sv_unit
+R8
+Z274 V<XEi1GFRdeT4g@WC<Yi941
+r1
+31
+Z275 I<XEi1GFRdeT4g@WC<Yi941
+S1
+R12
+R267
+R268
+R269
+L0 9
+R16
+R270
+R271
+R272
+R18
+R19
+Z276 !s100 ]JbaXFnk?`>@HGE5NiQa72
+!s85 0
+!i10b 1
+!i103 1
+vuart_tx
+R8
+Z277 Ia9m^b^<GRjY[;9;6GLKNb3
+Z278 Vf8MULW;QDdAm=JDfKjO^I2
+Z279 !s105 uart_tx_sv_unit
+S1
+R12
+Z280 w1430759173
+Z281 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx.sv
+Z282 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx.sv
+L0 8
+R16
+r1
+31
+Z283 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx.sv|
+R18
+R19
+Z284 !s100 @o_MfF^8bIE:N>IG4FCKa2
+Z285 !s108 1430759175.353036
+Z286 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx.sv|
+!i10b 1
+!s85 0
+vuart_tx_TCU
+R8
+Z287 I?2RJO4JbN@GM_zlDzU<QK1
+Z288 VBb9Z`<Q5_8^[V[KUlo3m_1
+Z289 !s105 uart_tx_TCU_sv_unit
+S1
+R12
+Z290 w1430605998
+Z291 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx_TCU.sv
+Z292 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx_TCU.sv
+L0 8
+R16
+r1
+31
+Z293 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx_TCU.sv|
+R18
+R19
+Z294 nuart_tx_@t@c@u
+Z295 !s100 0]4WSgl2=S8G81?2MAkCG3
+Z296 !s108 1430606001.558072
+Z297 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uart_tx_TCU.sv|
+!i10b 1
+!s85 0
+vuartrx
+R8
+Z298 ImR7nnR1keoQM9U3AM3Jk12
+Z299 VTKMDUhWZa9So_keHR;a@C0
+Z300 !s105 uartrx_sv_unit
+S1
+R12
+Z301 w1430687750
+Z302 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx.sv
+Z303 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx.sv
+L0 8
+R16
+r1
+31
+Z304 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx.sv|
+R18
+R19
+Z305 !s100 gTXgG=<0UWU@d]RjnnkMd1
+Z306 !s108 1430687753.079621
+Z307 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx.sv|
+!i10b 1
+!s85 0
+vuartrx_buffer
+R8
+Z308 I79IU?9VD9KbR00d;1eE1;2
+Z309 V[`YIa<MbW8mHe0:^eK_;M3
+S1
+R12
+Z310 w1430684706
+Z311 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_buffer.sv
+Z312 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_buffer.sv
+L0 8
+R16
+r1
+31
+R18
+R19
+Z313 !s100 6[79T6bYfLR6m?lY<:5YF3
+Z314 !s105 uartrx_buffer_sv_unit
+Z315 !s108 1430684708.351246
+Z316 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_buffer.sv|
+Z317 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_buffer.sv|
+!i10b 1
+!s85 0
+vuartrx_start_bit_det
+R8
+Z318 ISSJXKV2RZjPEha>AX8E6?0
+Z319 V0THV]AJ1i9UV2NRFK:M1i2
+S1
+R12
+Z320 w1430767449
+Z321 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_start_bit_det.sv
+Z322 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_start_bit_det.sv
+L0 9
+R16
+r1
+31
+R18
+R19
+Z323 !s100 XY6?KZooeno<15D:O31EP1
+Z324 !s105 uartrx_start_bit_det_sv_unit
+Z325 !s108 1430767466.847964
+Z326 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_start_bit_det.sv|
+Z327 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_start_bit_det.sv|
+!i10b 1
+!s85 0
+vuartrx_stop_bit_chk
+R8
+Z328 IFUU[R7?0LW>j?`bO]QN<j0
+Z329 V4D8?:V;9TfB?O50i<cAKW0
+S1
+R12
+Z330 w1430767395
+Z331 8/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_stop_bit_chk.sv
+Z332 F/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_stop_bit_chk.sv
+L0 9
+R16
+r1
+31
+R18
+R19
+Z333 !s100 F7ic[[:m:`@>Q4^Bz?_3Y0
+Z334 !s105 uartrx_stop_bit_chk_sv_unit
+Z335 !s108 1430767432.698048
+Z336 !s107 /home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_stop_bit_chk.sv|
+Z337 !s90 -reportprogress|300|-work|work|/home/ecegrid/a/mg108/ece337/Project/ECE337Project/source/uartrx_stop_bit_chk.sv|
+!i10b 1
 !s85 0

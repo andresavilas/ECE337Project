@@ -16,12 +16,12 @@ include /home/ecegrid/a/ece337/Course_Prod/course_make_vars
 # (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-COMPONENT_FILES	:= miner_core_timer.sv flex_counter.sv 
+COMPONENT_FILES	:= uart_tx_TCU.sv flex_pts_sr.sv flex_counter.sv uartrx_buffer.sv uartrx_rcu.sv uartrx_sr_9bit.sv uartrx_start_bit_det.sv uartrx_stop_bit_chk.sv uartrx_timer.sv flex_stp_sr.sv miner_core.sv miner_core_CCU.sv miner_core_comp.sv miner_core_msa.sv miner_core_sha.sv miner_counter.sv miner_core_timer.sv miner_MCU.sv miner_NonceCounter.sv miner.sv miner_hashing_function.sv      
 
 # Specify the name of the top level file (do not include the source folder in the name)
 # NOTE: YOU WILL NEED TO SET THIS VARIABLE'S VALUE WHEN WORKING WITH HEIRARCHICAL DESIGNS
 # AND THE AUTOMATED GRADING SYSTEM
-TOP_LEVEL_FILE	:= miner_core_CCU.sv 
+TOP_LEVEL_FILE	:= uartrx.sv  
 
 # Specify the filepath of the test bench you want to use (ie. tb_top_level.sv)
 # (do not include the source folder in the name)
@@ -29,7 +29,7 @@ TEST_BENCH	:= tb_$(TOP_LEVEL_FILE)
 
 # Fill in the names of any test bench helper code files (code files referenced by your testbenches
 # other than the actual design files)( do not include the 'source/')
-TB_HELPER_FILES	:= 
+TB_HELPER_FILES	:= uart_tx.sv 
 
 # Get the top level design and test_bench module names
 TB_MODULE		:= $(notdir $(basename $(TEST_BENCH)))

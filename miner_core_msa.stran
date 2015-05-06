@@ -1,0 +1,64 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.12.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work/.tb_miner_core_msa 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_msa(fast)".
+# Loading sv_std.std
+# Loading work.tb_miner_core_msa_sv_unit(fast)
+# Loading work.tb_miner_core_msa(fast)
+run 10500 ns 
+# 16:0
+# 17:774587570
+# 18:0
+# 19:3401897985
+# 20:0
+# 21:4147277068
+# 22:1238290
+# 23:2065312228
+# 24:1549175140
+# 25:1372615780
+# 26:1615759364
+# 27:883611343
+# 28:2353863832
+# 29:835074951
+# 30:1180526648
+# 31:925400523
+# 32:462481080
+# 33:3217753124
+# 34:3506839891
+# 35:969617270
+# 36:2731090793
+# 37:3442636743
+# 38:991504891
+# 39:1832832873
+# 40:2909701181
+# 41:2279718469
+# 42:1511764627
+# 43:670474324
+# 44:2403818615
+# 45:324130415
+# 46:2301407685
+# 47:25230781
+# 48:301645082
+# 49:2972070831
+# 50:582906838
+# 51:946328001
+# 52:3112324551
+# 53:614573569
+# 54:414675542
+# 55:922456580
+# 56:2858364873
+# 57:658697490
+# 58:157232314
+# 59:914816244
+# 60:3515380348
+# 61:2218340865
+# 62:1019884254
+# 63:77353220

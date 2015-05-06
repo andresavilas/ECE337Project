@@ -1,0 +1,43 @@
+# //  ModelSim SE-64 10.1b Apr 26 2012 Linux 2.6.32-504.16.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +no_glitch_msg -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Class0.5u/ECE337_IP/vsim -coverage -i -t ps source_work.tb_miner 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_msa(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_MCU(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_CCU(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "miner_core_comp(fast)".
+# Loading sv_std.std
+# Loading work.tb_miner_sv_unit(fast)
+# Loading work.tb_miner(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+add wave *
+run 480000 ns
+# 00000000e8817bc0ab40272591666f084b92130eee0e5172c04512dd6409fcb700907b5f
+# df07504d8ca06ff95f76e843977506581cdfc8e8c764e360da5da6af22ff1c9600907afb
+add wave -position end  sim:/tb_miner/DUT/tx_data
+add wave -position end  sim:/tb_miner/DUT/target
+add wave -position end  sim:/tb_miner/DUT/send_data
+add wave -position end  sim:/tb_miner/DUT/nonce_flag
+add wave -position end  sim:/tb_miner/DUT/nonce
+add wave -position end  sim:/tb_miner/DUT/hash_enable
+add wave -position end  sim:/tb_miner/DUT/finished
+add wave -position end  sim:/tb_miner/DUT/count_enable
+add wave -position end  sim:/tb_miner/DUT/correct_nonce
+add wave -position end  sim:/tb_miner/DUT/correct_hash
+add wave -position end  sim:/tb_miner/DUT/block
+restart -f; run 480000 ns
+# Loading sv_std.std
+# Loading work.tb_miner_sv_unit(fast)
+# Loading work.tb_miner(fast)
+# Loading work.miner_core_sha(fast)
+# Loading work.miner_core_comp(fast)
+# 00000000e8817bc0ab40272591666f084b92130eee0e5172c04512dd6409fcb700907b5f
+# df07504d8ca06ff95f76e843977506581cdfc8e8c764e360da5da6af22ff1c9600907afb
